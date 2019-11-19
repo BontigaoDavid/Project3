@@ -1,7 +1,7 @@
 {
-  "name": "fakazon2",
+  "name": "project3",
   "version": "1.0.0",
-  "description": "A nice ecommerce template",
+  "description": "A small custom learning platform",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
     "dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm start"
   },
-  "author": "Cody Clark",
+  "author": "David Bontiago, John Doe, Jasmine Tsai",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^4.1.2",
