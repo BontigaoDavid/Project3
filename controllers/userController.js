@@ -1,5 +1,5 @@
 const db = require("../models");
-const bcrypt = require("bcrypt");
+// const bcrypt = require("bcrypt");
 const saltRounds = 13;
 
 // Defining methods for the userController

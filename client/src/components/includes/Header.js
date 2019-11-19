@@ -1,8 +1,8 @@
-import React from "./node_modules/react";
+import React from "react";
 
 function Header () {
   return (
-    <header className="py-3">
+    <header className="py-3 bg-dark text-light">
       <div className="container">
         <h1>Project 03</h1>
       </div>

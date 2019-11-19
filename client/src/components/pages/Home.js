@@ -1,10 +1,12 @@
 import React from "react";
 
-function Home () {
+function Home() {
   return (
     <main>
-      <h1>Home Page</h1>
-      <p>Random content</p>
+      <div className="container">
+        <h1>Home Page</h1>
+        <p>Random content</p>
+      </div>
     </main>
   );
 }
