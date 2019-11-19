@@ -11,14 +11,14 @@ import Home from "./components/pages/Home";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Navbar />
-      <Router>
+    <Router>
+      <div className="App">
+        <Header />
+        <Navbar />
         <Route exact path="/" component={Home} />
         <Footer />
-      </Router>
-    </div>
+      </div>
+    </Router>
   );
 }
 
