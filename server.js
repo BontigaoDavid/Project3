@@ -23,7 +23,7 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Setting up mongoose connection
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fakazon");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/" + PORT);
 
 // Starting up the server
 app.listen(PORT, () =>
