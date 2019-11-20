@@ -29,6 +29,9 @@ function About() {
           name={"Jasmine Tsai"}
           user={"jtsai972"}
           src={"https://avatars2.githubusercontent.com/u/48503405?s=460&v=4"}
+          website="jtsai972.space"
+          github="jtsai972"
+          linkedin="jasmine-tsai"
         />
       </div>
     </div>
