@@ -1,19 +1,36 @@
-import React from "react";
+import React, {Component} from "react";
+import API from "../utils/API";
+import {Input, FormBtn} from "./includes/Form"
 
-function Login() {
+class Login extends Component {
+
+  state = {
+    session: false,
+    email: "",
+    password: ""
+  }
+
+
+
+  render () {
   return (
     <form className="border bg-light p-3 rounded">
-      <div className="form-group">
-        <label htmlFor="loginEmail">Email address</label>
-        <input type="email" className="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="Enter email" />
-      </div>
-      <div className="form-group">
-        <label htmlFor="loginPassword">Password</label>
-        <input type="password" className="form-control" id="loginPassword" placeholder="Password" />
-      </div>
-      <button type="Login" className="btn btn-primary">Login</button>
+       <Input
+      value = {this.state.email}
+      onChange = {this.handleInputChange}
+      name = "email"
+      placeholder = "Email (Required)"
+      />
+       <Input
+      value = {this.state.password}
+      onChange = {this.handleInputChange}
+      name = "password"
+      placeholder = "Password (Required)"
+      />
+      <FormBtn onClick = {this.handleFormSubmit}>Log In</FormBtn>
     </form>
   );
+}
 }
 
 export default Login;
