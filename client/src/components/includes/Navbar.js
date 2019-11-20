@@ -57,6 +57,18 @@ function Navbar() {
                 Profile Page
               </Link>
             </li>
+            <li className="nav-item">
+              <Link
+                to="/about"
+                className={
+                  window.location.pathname === "/about"
+                    ? "nav-link active"
+                    : "nav-link"
+                }
+              >
+                About Page
+              </Link>
+            </li>
           </ul>
           <span className="navbar-text">
             Navbar text with an inline element
