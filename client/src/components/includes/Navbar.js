@@ -21,7 +21,7 @@ function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarText">
           <ul className="navbar-nav mr-auto">
-            <li className="nav-item active">
+            <li className="nav-item">
               <Link
                 to="/"
                 className={
@@ -32,7 +32,30 @@ function Navbar() {
               >
                 Home
               </Link>
-              <span className="sr-only">(current)</span>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/lesson"
+                className={
+                  window.location.pathname === "/lesson"
+                    ? "nav-link active"
+                    : "nav-link"
+                }
+              >
+                Lesson Page
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/user"
+                className={
+                  window.location.pathname === "/user"
+                    ? "nav-link active"
+                    : "nav-link"
+                }
+              >
+                Profile Page
+              </Link>
             </li>
           </ul>
           <span className="navbar-text">

@@ -3,7 +3,7 @@ import React from "react";
 function Lesson() {
   return (
     <div className="container">
-      <h1>Lesson Page</h1>
+      <h2>Lesson Page</h2>
       <p>Random content</p>
     </div>
   );
