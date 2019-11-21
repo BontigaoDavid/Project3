@@ -1,0 +1,4 @@
+.content-box {
+  border: 0.1em solid rgba(128,128,255, 0.5);
+  display: inline-block;
+}
