@@ -21,12 +21,10 @@ module.exports = {
         bcrypt.compare(req.body.password, dbModel.password, (err, result) => {
           if (result === true) {
             res.json(dbModel);
-          } else {
-            res.send(false);
-          }
+          } 
         })  
       )
-      .catch(err => res.status(422).json(err));
+      .catch(err => res.send(false));
   },
   create: function(req, res) {
     bcrypt.genSalt(saltRounds, function(err, salt) {
