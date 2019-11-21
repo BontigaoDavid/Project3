@@ -31,6 +31,7 @@ class Signup extends Component {
         .then(res => {
           console.log("User saved by API");
           console.log(res);
+          window.location = "/user";
         });
     }
   }
