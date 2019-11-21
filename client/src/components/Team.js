@@ -11,9 +11,8 @@ function Team(props) {
         <div className="card-body">
           <h4 className="h5 card-title">{props.name}</h4>
           <Websites
-            website={props.website}
-            github={props.github}
-            linkedin={props.linkedin}
+            key={props.name}
+            props={props}
           />
         </div>
       </div>
