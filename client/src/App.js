@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Header, Navbar, Footer } from "./components/includes/index";
 
 // Pages
-import { Home, Profile, Lesson } from "./pages/index";
+import { Home, Profile, Lesson, About } from "./pages/index";
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/user" component={Profile} />
           <Route exact path="/lesson" component={Lesson} />
+          <Route exact path="/about" component={About} />
         </main>
         <Footer />
       </div>
