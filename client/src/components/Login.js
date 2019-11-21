@@ -10,12 +10,14 @@ class Login extends Component {
     password: ""
   }
 
+
   componentDidMount() {
     API.findAll()
       .then( res => {
         console.log(res);
       });
   }
+
 
   handleInputChange = event => {
     const { name, value } = event.target;
@@ -26,6 +28,7 @@ class Login extends Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
+
 
     let userData = {
       email: this.state.email,
@@ -47,11 +50,13 @@ class Login extends Component {
        <Input
       value = {this.state.email}
       onChange = {this.handleInputChange}
+      type = "email"
       name = "email"
       placeholder = "Email (Required)"
       />
        <Input
       value = {this.state.password}
+      type = "password"
       onChange = {this.handleInputChange}
       name = "password"
       placeholder = "Password (Required)"
