@@ -1,5 +1,5 @@
 import React from "react";
-import Websites from "./about/Websites"
+import Websites from "./About/Websites"
 
 function Team(props) {
   console.log(props);
