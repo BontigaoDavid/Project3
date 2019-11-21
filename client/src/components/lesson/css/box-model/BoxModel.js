@@ -1,24 +1,22 @@
 import React from "react";
 import Box from "./Box";
+import BoxLegend from "./BoxLegend";
 
 function BoxModel() {
   return (
-    <div>
-      <ul className="legend list-group">
-        <li className="list-group-item">
-          <span className="margin-box badge px-2">&nbsp;</span> Margin
-        </li>
-        <li className="list-group-item">
-          <span className="border-box badge px-2">&nbsp;</span> Border
-        </li>
-        <li className="list-group-item">
-          <span className="padding-box badge px-2">&nbsp;</span> Padding
-        </li>
-        <li className="list-group-item">
-          <span className="content-box badge px-2">&nbsp;</span> Content
-        </li>
-      </ul>
-      <Box />
+    <div className="row">
+      <div className="col-12 col-md-4"></div>
+      <div className="col-12 col-md-8">
+        <div className="card">
+          <div className="card-header d-flex justify-content-center">
+            <BoxLegend />
+          </div>
+          <div className="card-body d-flex justify-content-center">
+            <Box />
+            <Box />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

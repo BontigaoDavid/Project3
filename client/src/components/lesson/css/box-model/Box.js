@@ -3,12 +3,12 @@ import "./style.css";
 
 function Box() {
   return(
-    <div className="margin-box">
-      Margin
+    <div className="margin-box p-5">
+      {/* Margin */}
       <div className="border-box">
-        Border
-        <div className="padding-box">
-          Padding
+        {/* Border */}
+        <div className="padding-box p-5">
+          {/* Padding */}
           <div className="content-box">Content</div>
         </div>
       </div>
