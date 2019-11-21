@@ -1,6 +1,6 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import API from "../utils/API";
-import {Input, FormBtn} from "./includes/Form"
+import { Input, FormBtn } from "./includes/Form"
 
 class Signup extends Component {
   state = {
@@ -10,6 +10,9 @@ class Signup extends Component {
     password: ""
   }
 
+  componentDidMount() {
+  }
+
   handleInputChange = event => {
     const { name, value } = event.target;
     this.setState({
@@ -17,18 +20,21 @@ class Signup extends Component {
     });
   };
 
-handleFormSubmit = event => {
-  event.preventDefault();
-  if (this.state.username && this.state.email && this.state.password) {
-    API.saveUser({
-      username: this.state.username,
-      email: this.state.email,
-      password: this.state.password
-    })
-    .then(res => console.log(res))
-    .catch(err => console.log(err))
+  handleFormSubmit = event => {
+    event.preventDefault();
+    if (this.state.username && this.state.email && this.state.password) {
+      API.saveUser({
+        username: this.state.username,
+        email: this.state.email,
+        password: this.state.password
+      })
+        .then(res => {
+          console.log("User saved by API");
+          console.log(res);
+        });
+    }
   }
-}
+
 
 
   render () {
@@ -58,6 +64,7 @@ handleFormSubmit = event => {
     </form>
   );
 }
+
 }
 
 export default Signup;

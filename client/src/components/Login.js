@@ -10,6 +10,15 @@ class Login extends Component {
     password: ""
   }
 
+
+  componentDidMount() {
+    API.findAll()
+      .then( res => {
+        console.log(res);
+      });
+  }
+
+
   handleInputChange = event => {
     const { name, value } = event.target;
     this.setState({
@@ -17,6 +26,23 @@ class Login extends Component {
     });
   };
 
+  handleFormSubmit = event => {
+    event.preventDefault();
+
+
+    let userData = {
+      email: this.state.email,
+      password: this.state.password
+    }
+
+    console.log(this.state.email);
+    console.log(this.state.password);
+
+    API.loginUser(userData)
+    .then(res => {
+      console.log("logged in!");
+    })
+  }
 
   render () {
   return (
