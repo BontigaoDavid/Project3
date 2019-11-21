@@ -22,7 +22,7 @@ module.exports = {
           if (result === true) {
             res.json(dbModel);
           } else {
-            res.send("Incorrect username or password!");
+            res.send(false);
           }
         })  
       )

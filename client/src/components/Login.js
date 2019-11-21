@@ -40,7 +40,14 @@ class Login extends Component {
 
     API.loginUser(userData)
     .then(res => {
-      console.log("logged in!");
+      if (!res.data) {
+        alert("Email and Password did not match any credentials in our system!");
+      }
+      
+      else {
+        sessionStorage.setItem("authorized", true);
+        window.location = "/user";
+      }
     })
   }
 
