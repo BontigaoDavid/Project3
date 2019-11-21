@@ -10,6 +10,12 @@ class Login extends Component {
     password: ""
   }
 
+  handleInputChange = event => {
+    const { name, value } = event.target;
+    this.setState({
+      [name]: value
+    });
+  };
 
 
   render () {
@@ -18,11 +24,13 @@ class Login extends Component {
        <Input
       value = {this.state.email}
       onChange = {this.handleInputChange}
+      type = "email"
       name = "email"
       placeholder = "Email (Required)"
       />
        <Input
       value = {this.state.password}
+      type = "password"
       onChange = {this.handleInputChange}
       name = "password"
       placeholder = "Password (Required)"

@@ -44,12 +44,14 @@ handleFormSubmit = event => {
       value = {this.state.email}
       onChange = {this.handleInputChange}
       name = "email"
+      type = "email"
       placeholder = "Email (Required)"
       />
        <Input
       value = {this.state.password}
       onChange = {this.handleInputChange}
       name = "password"
+      type = "password"
       placeholder = "Password (Required)"
       />
       <FormBtn onClick = {this.handleFormSubmit}>Sign Up</FormBtn>
