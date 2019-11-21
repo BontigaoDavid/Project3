@@ -15,8 +15,8 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-  login: function(req, res) {
-    db.User.findById(req.params.id)
+  login: function(req, res) { 
+    db.User.findOne({email: req.body.email})
       .then(dbModel =>
         bcrypt.compare(req.body.password, dbModel.password, (err, result) => {
           if (result === true) {
@@ -24,7 +24,7 @@ module.exports = {
           } else {
             res.send("Incorrect username or password!");
           }
-        })
+        })  
       )
       .catch(err => res.status(422).json(err));
   },
