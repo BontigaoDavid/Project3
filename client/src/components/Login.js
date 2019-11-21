@@ -1,24 +1,27 @@
 import React, { Component } from "react";
 import API from "../utils/API";
-import { Input, FormBtn } from "./includes/Form"
+
+import { Input, FormBtn } from "./includes/Form";
+
+
 
 class Login extends Component {
-
   state = {
     session: false,
     email: "",
-    password: ""
-  }
-
+    password: "",
+    failedLogin: false
+  };
 
   componentDidMount() {
+
     API.findAll()
       .then(res => {
         console.log(res);
       });
     console.log("Authorized: "+sessionStorage.getItem("isAuthorized"));
-  }
 
+  }
 
   handleInputChange = event => {
     const { name, value } = event.target;
@@ -30,20 +33,22 @@ class Login extends Component {
   handleFormSubmit = event => {
     event.preventDefault();
 
-
     let userData = {
       email: this.state.email,
       password: this.state.password
-    }
+    };
 
     console.log(this.state.email);
     console.log(this.state.password);
 
-    API.loginUser(userData)
-      .then(res => {
-        if (!res.data) {
-          alert("Email and Password did not match any credentials in our system!");
-        }
+
+    API.loginUser(userData).then(res => {
+      if (!res.data) {
+          this.setState({failedLogin:true})
+          this.setState({email: ""})
+          this.setState({password: ""})
+        
+      } 
 
         else {
           sessionStorage.setItem("isAuthorized", true);
@@ -53,9 +58,19 @@ class Login extends Component {
       })
   }
 
+
   render() {
     return (
       <form className="border bg-light p-3 rounded">
+
+        <div
+          className="alert alert-info text-center"
+          role="alert"
+          style={ this.state.failedLogin ? {display: "block"} : {display: "none"}  }
+        >
+          Incorrect Email and Password Combination
+        </div>
+
         <Input
           value={this.state.email}
           onChange={this.handleInputChange}
