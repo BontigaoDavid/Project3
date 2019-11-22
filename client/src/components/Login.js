@@ -6,13 +6,19 @@ class Login extends Component {
   state = {
     session: false,
     email: "",
-    password: ""
+
+    password: "",
+    failedLogin: false
   };
 
   componentDidMount() {
-    API.findAll().then(res => {
-      console.log(res);
-    });
+
+    API.findAll()
+      .then(res => {
+        console.log(res);
+      });
+    console.log("Authorized: "+sessionStorage.getItem("isAuthorized"));
+
   }
 
   handleInputChange = event => {
@@ -33,14 +39,35 @@ class Login extends Component {
     console.log(this.state.email);
     console.log(this.state.password);
 
+
     API.loginUser(userData).then(res => {
-      console.log("logged in!");
-    });
-  };
+      if (!res.data) {
+          this.setState({failedLogin:true})
+          this.setState({email: ""})
+          this.setState({password: ""})
+        
+      } 
+
+        else {
+          sessionStorage.setItem("isAuthorized", true);
+          sessionStorage.setItem("user", JSON.stringify(res.data));
+          window.location = "/user";
+        }
+      })
+  }
 
   render() {
     return (
       <form className="border bg-light p-3 rounded">
+
+        <div
+          className="alert alert-info text-center"
+          role="alert"
+          style={ this.state.failedLogin ? {display: "block"} : {display: "none"}  }
+        >
+          Incorrect Email and Password Combination
+        </div>
+
         <Input
           value={this.state.email}
           onChange={this.handleInputChange}

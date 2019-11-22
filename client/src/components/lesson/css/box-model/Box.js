@@ -3,9 +3,9 @@ import "./style.css";
 
 function Box() {
   return(
-    <div className="margin-box p-4">
+    <div className="margin-box">
       {/* Margin */}
-      <div className="border-box">
+      <div className="border-box m-4">
         {/* Border */}
         <div className="padding-box p-4">
           {/* Padding */}
