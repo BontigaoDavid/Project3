@@ -2,8 +2,7 @@ import React from "react";
 
 function Websites(props) {
   let responses = [];
-  props = props.props
-  
+
   // console.log(props);
   // console.log(Object.keys(props.props));
 
@@ -12,24 +11,27 @@ function Websites(props) {
       case "website":
         responses.push(
           <p>
-            <a href={props.website}>Website - {props.website}</a>
+            <i class="fas fa-globe"> </i> 
+            <strong>Website: </strong><br />
+            <a href={props.website}>{props.website} </a>
           </p>
         );
         break;
       case "github":
         responses.push(
           <p>
-            <a href={"https://github.com/" + props.github}>
-              Github - {props.github}
-            </a>
+            <i class="fab fa-github"> </i> 
+            <strong>Github: </strong><br />
+            <a href={"https://github.com/" + props.github}>{props.github}</a>
           </p>
         );
         break;
       case "linkedin":
         responses.push(
           <p>
+            <i class="fab fa-linkedin-square"> </i> <strong>LinkedIn: </strong><br />
             <a href={"https://www.linkedin.com/in/" + props.linkedin}>
-              LinkedIn - {props.linkedin}
+              {props.linkedin}
             </a>
           </p>
         );
@@ -37,14 +39,18 @@ function Websites(props) {
       case "portfolio":
         responses.push(
           <p>
-            <a href={props.portfolio}>Portfolio - {props.portfolio}</a>
+            <i class="fas fa-code"> </i>
+            <strong>Portfolio: </strong><br />
+            <a href={props.portfolio}>{props.portfolio}</a>
           </p>
         );
         break;
       case "codepen":
         responses.push(
           <p>
-            <a href={props.codepen}>Codepen - {props.codepen}</a>
+            <i class="fab fa-codepen"> </i>
+            <strong>Codepen: </strong><br />
+            <a href={props.codepen}>{props.codepen}</a>
           </p>
         );
         break;

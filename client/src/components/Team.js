@@ -10,10 +10,7 @@ function Team(props) {
         <img className="card-img-top" src={props.src} alt={props.name} />
         <div className="card-body">
           <h4 className="h5 card-title">{props.name}</h4>
-          <Websites
-            key={props.name}
-            props={props}
-          />
+          <Websites {...props} />
         </div>
       </div>
     </div>
