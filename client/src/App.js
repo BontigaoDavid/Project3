@@ -15,8 +15,8 @@ function App() {
         <Navbar />
         <main className="my-5">
           <Route exact path="/" component={Home} />
-          <Route exact path="/user" component={Profile} />
-          <Route exact path="/lesson" component={Lesson} />
+          <Route path="/user" component={Profile} />
+          <Route path="/lesson" component={Lesson} />
           <Route exact path="/about" component={About} />
         </main>
         <Footer />

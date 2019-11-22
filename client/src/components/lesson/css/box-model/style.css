@@ -1,0 +1,24 @@
+.content-box, .padding-box, .border-box, .margin-box {
+  border-width: 0.1em;
+  border-style: solid;
+  display: inline-block;
+  margin: 0;
+}
+
+.content-box {
+  background: #BFE9FF;
+  border-color: #40BDFF;
+}
+.padding-box {
+  background: #D9FFD9;
+  border-color: #73BF73;
+}
+.border-box {
+  
+  border-width: 0.4em;
+  border-color: #FFD500;
+}
+.margin-box {
+  background: #FFECD9;
+  border-color: #FFC180
+}
