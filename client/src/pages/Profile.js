@@ -3,13 +3,31 @@ import Badge from "./../components/Badge";
 
 class Profile extends Component {
 
+  state = {
+    username: "",
+    email: ""
+  }
+
   componentDidMount() {
     if(!sessionStorage.getItem("isAuthorized"))
     {
       window.location = "../";
     }
     
-    console.log(JSON.parse(sessionStorage.getItem("user")));
+    // const userObj = JSON.parse(sessionStorage.getItem("user"));
+    // console.log(userObj)
+    this.handleProfile()
+  }
+
+  handleProfile = () => {
+    const userObj = JSON.parse(sessionStorage.getItem("user"));
+    console.log(userObj)
+    
+    this.setState ({
+      username: userObj.username,
+      email: userObj.email
+
+    })
   }
 
   render() {
@@ -21,10 +39,10 @@ class Profile extends Component {
             <img className="img-fluid img-thumbnail p-2" src="https://source.unsplash.com/random/800x800" alt="Current User" />
           </div>
           <div className="col-12 col-md-9">
-            <h3>RndGirl300</h3>
+            <h3>{this.state.username}</h3>
             <p>
-              <strong>Name:</strong> Jane Stiles<br />
-              <strong>Email:</strong> example@gmail.com
+              {/* <strong>Name:</strong> Jane Stiles<br /> */}
+              <strong>Email:</strong> {this.state.email}
           </p>
             <h3>Description</h3>
             <p>Whatever information we think we need or want will go here</p>

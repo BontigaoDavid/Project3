@@ -36,8 +36,8 @@ class Login extends Component {
       password: this.state.password
     };
 
-    console.log(this.state.email);
-    console.log(this.state.password);
+    // console.log(this.state.email);
+    // console.log(this.state.password);
 
 
     API.loginUser(userData).then(res => {
