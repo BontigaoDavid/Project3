@@ -29,6 +29,7 @@ function About() {
           user="Johnphtdo"
           src="https://avatars0.githubusercontent.com/u/55046389?s=460&v=4"
           github="Johnphtdo"
+          linkedin="john-do-a02a4661"
         />
         <Team
           name="Jasmine Tsai"
