@@ -19,22 +19,26 @@ function About() {
       <h3>The Team</h3>
       <div className="row">
         <Team
-          name={"David Bontiago"}
-          user={"BontigaoDavid"}
-          src={"https://avatars1.githubusercontent.com/u/43974452?s=460&v=4"}
+          name="David Bontiago"
+          user="BontigaoDavid"
+          src="https://avatars1.githubusercontent.com/u/43974452?s=460&v=4"
+          github="BontigaoDavid"
         />
         <Team
-          name={"John Do"}
-          user={"Johnphtdo"}
-          src={"https://avatars0.githubusercontent.com/u/55046389?s=460&v=4"}
+          name="John Do"
+          user="Johnphtdo"
+          src="https://avatars0.githubusercontent.com/u/55046389?s=460&v=4"
+          github="Johnphtdo"
         />
         <Team
-          name={"Jasmine Tsai"}
-          user={"jtsai972"}
-          src={"https://avatars2.githubusercontent.com/u/48503405?s=460&v=4"}
+          name="Jasmine Tsai"
+          user="jtsai972"
+          src="https://avatars2.githubusercontent.com/u/48503405?s=460&v=4"
           website="https://jtsai972.space"
           github="jtsai972"
           linkedin="jasmine-tsai"
+          codepen="https://codepen.io/jtsai972/"
+          portfolio="https://jtsai972.github.io/Github-Portfolio/"
         />
       </div>
     </div>
