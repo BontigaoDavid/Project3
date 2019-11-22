@@ -1,11 +1,17 @@
 import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import BoxModel from "./../components/lesson/css/box-model/BoxModel"
 
 function Lesson() {
+  console.log("Lesson page loaded")
   return (
-    <div className="container">
+    <Router>
+      <div className="container">
       <h2>Lesson Page</h2>
-      <p>Random content</p>
+      <Route path="/lesson/css/box-model" component={BoxModel} />
     </div>
+    </Router>
+    
   );
 }
 

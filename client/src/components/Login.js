@@ -1,14 +1,12 @@
 import React, { Component } from "react";
 import API from "../utils/API";
-
 import { Input, FormBtn } from "./includes/Form";
-
-
 
 class Login extends Component {
   state = {
     session: false,
     email: "",
+
     password: "",
     failedLogin: false
   };
@@ -57,7 +55,6 @@ class Login extends Component {
         }
       })
   }
-
 
   render() {
     return (
