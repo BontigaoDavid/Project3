@@ -4,7 +4,8 @@ function Header () {
   return (
     <header className="py-3 bg-dark text-light">
       <div className="container">
-        <h1>Project 03</h1>
+        <h1>Simply Conceptual</h1>
+        <p className="h3">Back to the Basics with Web Development</p>
       </div>
     </header>
   );
