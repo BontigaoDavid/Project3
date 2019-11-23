@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Badge from "./../components/Badge";
+import Badge from "../components/user/Badge";
 
 class Profile extends Component {
 

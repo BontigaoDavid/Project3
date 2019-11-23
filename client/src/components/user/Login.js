@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import API from "../utils/API";
-import { Input, FormBtn } from "./includes/Form";
+import API from "../../utils/API";
+import { Input, FormBtn } from "../Form";
 
 class Login extends Component {
   state = {

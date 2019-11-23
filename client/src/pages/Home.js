@@ -1,5 +1,5 @@
 import React from "react";
-import Usertab from "../components/includes/Usertab"
+import Usertab from "../components/user/Usertab";
 
 function Home() {
   return (
@@ -7,11 +7,12 @@ function Home() {
       <div className="row">
         <div className="col-12 col-md-6 col-lg-7">
           <h2>Welcome to our learning platform!</h2>
-          <p>If you want to keep track of your progress, it's easy, just sign up!</p>
+          <p>
+            If you want to keep track of your progress, it's easy, just sign up!
+          </p>
         </div>
-       <Usertab />
+        <Usertab />
       </div>
-
     </div>
   );
 }
