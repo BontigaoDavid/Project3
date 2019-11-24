@@ -31,7 +31,7 @@ class Navbar extends React.Component {
                       : "nav-link"
                   }
                 >
-                  <i class="fas fa-home"></i> Home
+                  <i className="fas fa-home"></i> Home
                 </Link>
               </li>
               <li className="nav-item">
