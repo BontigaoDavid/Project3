@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import BoxModel from "./../components/lesson/css/box-model/BoxModel"
+import BoxModel from "./../components/lesson/css/box-model/Lesson"
 
 function Lesson() {
   console.log("Lesson page loaded")
