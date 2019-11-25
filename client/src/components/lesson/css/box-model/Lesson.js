@@ -47,7 +47,7 @@ class BoxModel extends React.Component {
             <div className="card-header d-flex justify-content-center">
               <BoxLegend />
             </div>
-            <div className="card-body d-flex justify-content-center">
+            <div className="card-body d-flex align-items-center justify-content-center">
               <Box id="variable" margin={this.state.margin} padding={this.state.padding} />
               <Box margin="m-4" padding="p-4"  />
             </div>

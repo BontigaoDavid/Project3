@@ -20,11 +20,12 @@ class BoxButtons extends React.Component {
     // console.log(clicked_id)
     switch (clicked_id[0]) {
       case "m":
-        this.props.handler({
-          margin: clicked_id,
-          padding: this.props.style.padding,
-          border: this.props.style.border
-        });
+      if(this.props.style.margin !== clicked_id) {
+        this.props.handler({ margin: clicked_id });
+      } else {
+        this.props.handler({margin: ""})
+      };
+        
         // console.log(this.state.margin);
         // console.log(this.props.handler({margin: clicked_id}));
         break;
@@ -60,6 +61,7 @@ class BoxButtons extends React.Component {
           <button
             type="button"
             id="mx-4"
+            onClick={this.handleClick}
             className="btn btn-secondary tgl-mx border-left"
           >
             X-axis
@@ -67,6 +69,7 @@ class BoxButtons extends React.Component {
           <button
             id="my-4"
             type="button"
+            onClick={this.handleClick}
             className="btn btn-secondary tgl-my border-left"
           >
             Y-axis
