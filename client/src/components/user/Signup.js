@@ -20,16 +20,18 @@ class Signup extends Component {
   };
 
   handleFormSubmit = event => {
+    let user = {
+      username: this.state.username,
+      email: this.state.email,
+      password: this.state.password
+    };
     event.preventDefault();
     if (this.state.username && this.state.email && this.state.password) {
-      API.saveUser({
-        username: this.state.username,
-        email: this.state.email,
-        password: this.state.password
-      }).then(res => {
+      API.saveUser(user).then(res => {
         console.log("User saved by API");
         console.log(res);
         sessionStorage.setItem("isAuthorized", true);
+        sessionStorage.setItem("user", JSON.stringify(user));
         window.location = "/user";
       });
     }
