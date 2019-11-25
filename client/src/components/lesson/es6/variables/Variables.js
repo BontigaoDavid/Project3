@@ -21,6 +21,7 @@ class Variables extends Component {
 
     render () {
         return (<div className = "container">
+            <div className = "row"><h2>ES6 Variables</h2></div>
         <div className = "row">
             <div className = "col-6" >
                 <h1>ES5</h1>

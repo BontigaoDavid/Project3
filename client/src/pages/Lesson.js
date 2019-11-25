@@ -9,7 +9,7 @@ function Lesson() {
   return (
     <Router>
       <div className="container">
-      <h2>Lesson Page</h2>
+      {/* <h2>Lesson Page</h2> */}
       <Route path="/lesson/css/box-model" component={BoxModel} />
       <Route path="/lesson/es6/variables" component={Variables}/>
       <Route path="/lesson/es6/function" component={Function}/>
