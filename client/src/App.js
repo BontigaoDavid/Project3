@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-// Includes
-import { Header, Navbar, Footer } from "./components/includes/index";
+// Page Global Includes
+import { Header, Navbar, Footer } from "./pages/includes/index";
 
 // Pages
 import { Home, Profile, Lesson, About } from "./pages/index";

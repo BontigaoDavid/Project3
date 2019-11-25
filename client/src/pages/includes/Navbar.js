@@ -43,7 +43,7 @@ class Navbar extends React.Component {
                       : "nav-link"
                   }
                 >
-                  Lesson Page
+                  <i class="fas fa-graduation-cap"></i> Lessons
                 </Link>
               </li>
               <li className="nav-item">
@@ -55,7 +55,7 @@ class Navbar extends React.Component {
                       : "nav-link"
                   }
                 >
-                  About Page
+                  <i class="fas fa-info-circle"></i> About Us
                 </Link>
               </li>
               {/* if(sessionStorage.getItem("isAuthorized") {
@@ -68,7 +68,7 @@ class Navbar extends React.Component {
                         : "nav-link"
                     }
                   >
-                    Profile Page
+                    <i class="fas fa-user"></i> Profile
                   </Link>
                 </li>
               } */}
