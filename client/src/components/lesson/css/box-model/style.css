@@ -14,9 +14,8 @@
   border-color: #73BF73;
 }
 .border-box {
-  
-  border-width: 0.4em;
   border-color: #FFD500;
+  background: #FFD500;
 }
 .margin-box {
   background: #FFECD9;
