@@ -11,7 +11,7 @@ function Websites(props) {
       case "website":
         responses.push(
           <p>
-            <i class="fas fa-globe"> </i> 
+            <i className="fas fa-globe"> </i> 
             <strong>Website: </strong><br />
             <a href={props.website}>{props.website} </a>
           </p>
@@ -20,7 +20,7 @@ function Websites(props) {
       case "github":
         responses.push(
           <p>
-            <i class="fab fa-github"> </i> 
+            <i className="fab fa-github"> </i> 
             <strong>Github: </strong><br />
             <a href={"https://github.com/" + props.github}>{props.github}</a>
           </p>
@@ -29,7 +29,7 @@ function Websites(props) {
       case "linkedin":
         responses.push(
           <p>
-            <i class="fab fa-linkedin-square"> </i> <strong>LinkedIn: </strong><br />
+            <i className="fab fa-linkedin-square"> </i> <strong>LinkedIn: </strong><br />
             <a href={"https://www.linkedin.com/in/" + props.linkedin}>
               {props.linkedin}
             </a>
@@ -39,7 +39,7 @@ function Websites(props) {
       case "portfolio":
         responses.push(
           <p>
-            <i class="fas fa-code"> </i>
+            <i className="fas fa-code"> </i>
             <strong>Portfolio: </strong><br />
             <a href={props.portfolio}>{props.portfolio}</a>
           </p>
@@ -48,7 +48,7 @@ function Websites(props) {
       case "codepen":
         responses.push(
           <p>
-            <i class="fab fa-codepen"> </i>
+            <i className="fab fa-codepen"> </i>
             <strong>Codepen: </strong><br />
             <a href={props.codepen}>{props.codepen}</a>
           </p>
@@ -58,58 +58,6 @@ function Websites(props) {
         break;
     }
   });
-
-  // if (props.website) {
-  //   console.log(props.website);
-  //   responses.push(
-  //     <p>
-  //       <a href={props.website}>Website - {props.website}</a>
-  //     </p>
-  //   );
-  // }
-
-  // if (props.github) {
-  //   console.log(props.github);
-  //   responses.push(
-  //     <p>
-  //       <a href={"https://github.com/" + props.github}>
-  //         Github - {props.github}
-  //       </a>
-  //     </p>
-  //   );
-  // }
-
-  // if (props.linkedin) {
-  //   console.log(props.linkedin);
-  //   responses.push(
-  //     <p>
-  //       <a href={"https://www.linkedin.com/in/" + props.linkedin}>
-  //         LinkedIn - {props.linkedin}
-  //       </a>
-  //     </p>
-  //   );
-  // }
-
-  // if (props.portfolio) {
-  //   console.log(props.portfolio);
-  //   responses.push(
-  //     <p>
-  //       <a href={props.portfolio}>Portfolio - {props.portfolio}</a>
-  //     </p>
-  //   );
-  // }
-
-  // if (props.codepen) {
-  //   if (props.codepen) {
-  //     console.log(props.codepen);
-  //     responses.push(
-  //       <p>
-  //         <a href={props.codepen}>Codepen - {props.codepen}</a>
-  //       </p>
-  //     );
-  //   }
-  // }
-
   return responses;
 }
 
