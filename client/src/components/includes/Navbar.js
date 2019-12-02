@@ -21,7 +21,7 @@ class Navbar extends React.Component {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarText">
-            <ul className="navbar-nav mr-auto">
+          <ul className="navbar-nav mr-auto">
               <li className="nav-item">
                 <Link
                   to="/"
@@ -31,7 +31,7 @@ class Navbar extends React.Component {
                       : "nav-link"
                   }
                 >
-                  <i className="fas fa-home"></i> Home
+                  <i class="fas fa-home"></i> Home
                 </Link>
               </li>
               <li className="nav-item">
@@ -43,7 +43,7 @@ class Navbar extends React.Component {
                       : "nav-link"
                   }
                 >
-                  <i className="fas fa-graduation-cap"></i> Lessons
+                  Lesson Page
                 </Link>
               </li>
               <li className="nav-item">
@@ -55,25 +55,23 @@ class Navbar extends React.Component {
                       : "nav-link"
                   }
                 >
-                  <i className="fas fa-info-circle"></i> About Us
+                  About Page
                 </Link>
               </li>
-              <li
-                className={
-                  sessionStorage.getItem("isAuthorized") ? "nav-item" : "d-none"
-                }
-              >
-                <Link
-                  to="/user"
-                  className={
-                    window.location.pathname === "/user"
-                      ? "nav-link active"
-                      : "nav-link"
-                  }
-                >
-                  <i className="fas fa-user"></i> Profile
-                </Link>
-              </li>
+              {/* if(sessionStorage.getItem("isAuthorized") {
+                <li className="nav-item">
+                  <Link
+                    to="/user"
+                    className={
+                      window.location.pathname === "/user"
+                        ? "nav-link active"
+                        : "nav-link"
+                    }
+                  >
+                    Profile Page
+                  </Link>
+                </li>
+              } */}
             </ul>
             {/* <span className="navbar-text">
               Navbar text with an inline element
