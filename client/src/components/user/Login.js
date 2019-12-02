@@ -30,7 +30,7 @@ class Login extends Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
-
+    
     let userData = {
       email: this.state.email,
       password: this.state.password
@@ -40,8 +40,11 @@ class Login extends Component {
     // console.log(this.state.password);
 
 
+
     API.loginUser(userData).then(res => {
+      
       if (!res.data) {
+        console.log("Error")
           this.setState({failedLogin:true})
           this.setState({email: ""})
           this.setState({password: ""})
@@ -49,6 +52,7 @@ class Login extends Component {
       } 
 
         else {
+          console.log(res.data)
           sessionStorage.setItem("isAuthorized", true);
           sessionStorage.setItem("user", JSON.stringify(res.data));
           window.location = "/user";
