@@ -2,7 +2,7 @@ import React from "react";
 import Websites from "./Websites"
 
 function Team(props) {
-  console.log(props);
+  // console.log(props);
 
   return (
     <div className="col-12 col-sm-4 col-xl-3">

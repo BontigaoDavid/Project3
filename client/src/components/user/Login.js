@@ -15,9 +15,9 @@ class Login extends Component {
 
     API.findAll()
       .then(res => {
-        console.log(res);
+        // console.log(res);
       });
-    console.log("Authorized: "+sessionStorage.getItem("isAuthorized"));
+    // console.log("Authorized: "+sessionStorage.getItem("isAuthorized"));
 
   }
 
