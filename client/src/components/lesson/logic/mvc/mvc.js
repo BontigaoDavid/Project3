@@ -18,19 +18,26 @@ function mvc() {
                 <h4 className="text-center">Views</h4>
                 <p>
                     <div id="client-folder-div" className="float-left text-center">
-                        <img src={require("./client.png")} />
-                        <p>
+                        <p id="client-folder-label">
                             (client folder)
                         </p>
+                        <img src={require("./client.png")} />
                     </div>
-                    In this project we use React which commonly follows the MVC design. In the client folder the views of the application are held. These are the different parts of what the user will see and interact with. We include the different pages and components such as buttons, forms, inputs and a navbar. We also style our elements using css and provide image assets for the webpage in this folder as well. 
+                    In this project we use React which commonly follows the MVC design. In the client folder the views of the application are held. These are the different parts of what the user will see and interact with. We include the different pages and components such as buttons, forms, inputs and a navbar. We also style our elements using css and provide image assets for the webpage in this folder as well.
                 </p>
                 <img className="d-block mx-auto" src={require("./app-folder.png")} />
                 <p className="text-center">
                     (App.js using React Router)
                 </p>
                 <p>
-                    hello
+                    Our App.js is whats rendered to the the root of the html document. Using the router, App.js renders different pages and components depending on the route of the url they visit specified by the exact path property on each route tag. Each page uses buttons and inputs fields for the user to interact with.
+                </p>
+                <div className="d-flex justify-content-between align-items-center">
+                    <img className="mb-3" style={{ width: "45%"}} src={require("./controller.png")} />
+                    <img style={{ width: "45%" }} src={require("./user-model.png")} />
+                </div>
+                <p>
+                    The buttons and inputs make calls to the controller.js(left) in the controllers folder and passes in parameters from the fields the user filled out. The controller has a number of functions that can makes queries to the database and can create, modify and delete entries on the database. User.js(right) in the models folder contains the datastructure for the entries in the database. It uses mongoose a database language that allows the application to store objects with properties.   
                 </p>
             </div>
         </div>
