@@ -49,7 +49,7 @@ class Login extends Component {
           this.setState({email: ""})
           this.setState({password: ""})
         
-      } 
+      }
 
         else {
           console.log(res.data)
