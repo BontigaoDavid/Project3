@@ -43,7 +43,7 @@ footer {
 }
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 7px 7px 12px rgba(57, 57, 57, 0.7);
+  box-shadow: 6px 6px 10px rgba(57, 57, 57, 0.7);
 }
 .footer {
   /* background-image: linear-gradient(
