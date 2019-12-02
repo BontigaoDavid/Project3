@@ -18,12 +18,8 @@ function mvc() {
                 <h4 className="text-center">Views</h4>
                 <p>
                     <div id="client-folder-div" className="float-left text-center">
-<<<<<<< HEAD:client/src/components/lesson/logic/mvc/mvc.js
                         <p id="client-folder-label">
-=======
                         <img src={require("./client.png")} alt="client" />
-                        <p>
->>>>>>> b802c0ded1fee7d22e7f73e7138319b0222d3aa3:client/src/components/lesson/algorithms/mvc/mvc.js
                             (client folder)
                         </p>
                         <img src={require("./client.png")} />
