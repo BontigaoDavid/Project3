@@ -1,3 +1,8 @@
+:root {
+  --primary: #6e76ec;
+  --primary-alt: #050650;
+}
+
 body, #root, .App {
   min-height: 100vh;
 }
@@ -11,4 +16,26 @@ body i {
 }
 footer {
   margin-top: auto;
+}
+
+.footer {
+  background-color: var(--primary)
+}
+.header {
+  background-color: var(--primary)
+}
+.navbar{
+  background-color: var(--primary-alt)
+}
+.btn {
+  display: block;
+  background-image: linear-gradient(to bottom, var(--primary), var(--primary-alt));
+  color: white;
+  box-shadow: 0 5px 9px rgba(57, 57, 57, .4);
+  transform: translateY(0);
+  transition: 0.5s all ease;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 7px 7px 12px rgba(57,57,57, .7)
 }
