@@ -17,7 +17,7 @@ import timeComplexity from "./components/lesson/logic/time-complexity/time-compl
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="App justify-content-stretch">
         <Header />
         <Navbar />
           <Switch>
@@ -34,7 +34,6 @@ function App() {
 
           <Route exact path="/lesson/logic/mvc" component={MVC} />
           <Route exact path="/lesson/logic/time-complexity" component={timeComplexity} />
-          
         </main>
           </Switch>
         <Footer />
