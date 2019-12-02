@@ -10,6 +10,7 @@ class BoxModel extends React.Component {
 
     this.handleClick = this.handleClick.bind(this);
   }
+
   state = {
     border: "p-1",
     margin: "m-4",
@@ -26,10 +27,19 @@ class BoxModel extends React.Component {
     });
   }
 
-  componentDidUpdate(prevProps) {
-    // if (this.props.userID !== prevProps.userID) {
-    //   this.fetchData(this.props.userID);
-    // }
+  // componentDidUpdate(prevProps) {
+  //   // if (this.props.userID !== prevProps.userID) {
+  //   //   this.fetchData(this.props.userID);
+  //   // }
+  // }
+
+  handleReset = () => {
+    this.setState({
+      border: "p-1",
+      margin: "m-4",
+      padding: "p-4",
+      text: ["border: 0.4em solid #FFD500", "margin: 1.5rem", "padding: 1.5rem"]
+    });
   }
 
   handleClick = stateVal => {
@@ -44,6 +54,7 @@ class BoxModel extends React.Component {
       <div className="container">
         <h2>CSS Box Model</h2>
         <Explanation />
+        <h3>Interactive CSS Box Model</h3>
         <div className="row">
           <div className="col-12 col-lg-5">
             <BoxButtons style={this.state} handler={this.handleClick} />
@@ -69,7 +80,14 @@ class BoxModel extends React.Component {
                   {this.state.text[2]};
                 </code>
               </div>
-            </div>
+            </div>{/* End Card */}
+            <button
+              type="button"
+              onClick={this.handleReset}
+              className={`btn btn-secondary btn-block my-4`}
+            >
+              Reset Box Model
+            </button>
           </div>
         </div>
       </div>
