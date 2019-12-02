@@ -11,6 +11,18 @@
     margin-top: 15px;
 }
 
-#folder-img { margin-bottom: 50px; }
+#folder-img { 
+    margin-bottom: 50px; 
+}
 
-#client-folder-div { margin-right: 25px; }
+#client-folder-div {
+    margin-right: 25px;
+}
+
+#client-folder-label {
+    margin-bottom: 15px;
+}
+
+#client-folder-div {
+     margin-right: 25px; 
+}
