@@ -7,7 +7,7 @@ import { Header, Navbar, Footer } from "./pages/includes/index";
 // Pages
 import { Home, Profile, Lesson, About } from "./pages/index";
 
-import tableOfContents from "./components/lesson/home/home";
+// import tableOfContents from "./components/lesson/index";
 import BoxModel from "./components/lesson/css/box-model/Lesson";
 import Variables from "./components/lesson/es6/variables/Variables";
 import Function from "./components/lesson/es6/functions/Function";

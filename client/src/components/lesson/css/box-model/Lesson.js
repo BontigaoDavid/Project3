@@ -1,4 +1,5 @@
 import React from "react";
+import Explanation from "./Explanation";
 import Box from "./Box";
 import BoxLegend from "./Legend";
 import BoxButtons from "./Buttons";
@@ -40,30 +41,34 @@ class BoxModel extends React.Component {
   render() {
     // console.log(this.state);
     return (
-      <div className="row">
-        <div className="col-12 col-lg-5">
-          <BoxButtons style={this.state} handler={this.handleClick} />
-        </div>
-        <div className="col-12 col-lg-7">
-          <div className="card">
-            <div className="card-header">
-              <BoxLegend />
-            </div>
-            <div className="card-body d-flex align-items-center justify-content-center">
-              <Box
-                id="variable"
-                margin={this.state.margin}
-                padding={this.state.padding}
-                border={this.state.border}
-              />
-              <Box margin="m-4" padding="p-4" border="p-1" />
-            </div>
-            <div className="card-footer d-flex justify-content-center">
-              <code>
-                {this.state.text[0]}; <br />
-                {this.state.text[1]}; <br />
-                {this.state.text[2]};
-              </code>
+      <div className="container">
+        <h2>CSS Box Model</h2>
+        <Explanation />
+        <div className="row">
+          <div className="col-12 col-lg-5">
+            <BoxButtons style={this.state} handler={this.handleClick} />
+          </div>
+          <div className="col-12 col-lg-7">
+            <div className="card">
+              <div className="card-header">
+                <BoxLegend />
+              </div>
+              <div className="card-body d-flex align-items-center justify-content-center">
+                <Box
+                  id="variable"
+                  margin={this.state.margin}
+                  padding={this.state.padding}
+                  border={this.state.border}
+                />
+                <Box margin="m-4" padding="p-4" border="p-1" />
+              </div>
+              <div className="card-footer d-flex justify-content-center">
+                <code>
+                  {this.state.text[0]}; <br />
+                  {this.state.text[1]}; <br />
+                  {this.state.text[2]};
+                </code>
+              </div>
             </div>
           </div>
         </div>
