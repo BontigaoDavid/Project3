@@ -22,7 +22,9 @@ module.exports = {
           if (result === true) {
             res.json(dbModel);
           } 
-
+          else {
+            res.json(false)
+          }
         })  
       )
       .catch(err => res.send(false));
