@@ -1,10 +1,17 @@
-body, #root, .App {
+:root {
+  --primary: #6e76ec;
+  --primary-alt: #050650;
+}
+
+body,
+#root,
+.App {
   min-height: 100vh;
 }
 body i {
-  font-family:'FontAwesome';
+  font-family: "FontAwesome";
   font-style: normal;
-  }
+}
 .App {
   display: flex;
   flex-flow: column;
@@ -17,4 +24,39 @@ footer {
   background-image: url("./images/programming.jpg");
   background-size: cover;
   background-position: center bottom;
+}
+\
+.header {
+  /* background-image: linear-gradient(
+    to bottom right,
+    var(--primary),
+    var(--primary-alt)
+  ); */
+  background-color: var(--primary);
+  color: white;
+}
+.navbar {
+  background-color: var(--primary-alt);
+  color: white;
+}
+.btn {
+  display: block;
+  background-color: var(--primary-alt);
+  color: white;
+  box-shadow: 0 5px 9px rgba(57, 57, 57, 0.4);
+  transform: translateY(0);
+  transition: 0.5s all ease;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 7px 7px 12px rgba(57, 57, 57, 0.7);
+}
+.footer {
+  /* background-image: linear-gradient(
+    to bottom right,
+    var(--primary),
+    var(--primary-alt)
+  ); */
+  background-color: var(--primary);
+  color: white;
 }

@@ -21,6 +21,18 @@ class BoxButtons extends React.Component {
     // console.log(clicked_id.slice(2));
     // console.log(clicked_id)
     switch (clicked_id[0]) {
+      case "r":
+        this.props.handler({
+          border: "p-1",
+          margin: "m-4",
+          padding: "p-4",
+          text: [
+            "border: 0.4em solid #FFD500",
+            "margin: 1.5rem",
+            "padding: 1.5rem"
+          ]
+        });
+        break;
       case "m":
         if (this.props.style.margin !== clicked_id.slice(2)) {
           this.props.handler({
@@ -93,7 +105,10 @@ class BoxButtons extends React.Component {
   };
 
   handleClick = e =>
-    this.reply_click(e.target.getAttribute("addclass"), e.target.getAttribute("text"));
+    this.reply_click(
+      e.target.getAttribute("addclass"),
+      e.target.getAttribute("text")
+    );
 
   render(props) {
     // const {isClicked} = this.state;
@@ -101,6 +116,15 @@ class BoxButtons extends React.Component {
 
     return (
       <div>
+        {/* <button
+          type="button"
+          addclass="reset"
+          text=""
+          onClick={this.handleClick}
+          className={`btn btn-secondary btn-block mb-3`}
+        >
+          Reset
+        </button> */}
         <div className="card mb-2">
           <div className="card-header p-2">Margins</div>
           <div className="card-body p-2">
@@ -189,7 +213,7 @@ class BoxButtons extends React.Component {
           <div className="card-body p-2">
             <p className="mb-2">Toggling Borders</p>
             <div className="btn-group" role="group" aria-label="Borders">
-            <button
+              <button
                 type="button"
                 addclass="b-p-1"
                 text=": 0.25rem solid #FFD500"
