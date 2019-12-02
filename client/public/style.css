@@ -26,9 +26,11 @@ footer {
     var(--primary),
     var(--primary-alt)
   );
+  color: white;
 }
 .navbar {
   background-color: var(--primary-alt);
+  color: white;
 }
 .btn {
   display: block;
@@ -52,4 +54,5 @@ footer {
     var(--primary),
     var(--primary-alt)
   );
+  color: white;
 }
