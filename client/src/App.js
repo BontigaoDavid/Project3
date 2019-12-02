@@ -20,9 +20,9 @@ function App() {
       <div className="App">
         <Header />
         <Navbar />
-        <main className="my-5">
           <Switch>
           <Route exact path="/" component={Home} />
+        <main className="my-5">
           <Route exact path="/user" component={Profile} />
           <Route exact path="/lesson" component={Lesson} />
           <Route exact path="/about" component={About} />
@@ -35,8 +35,8 @@ function App() {
           <Route exact path="/lesson/logic/mvc" component={MVC} />
           <Route exact path="/lesson/logic/time-complexity" component={timeComplexity} />
           
-          </Switch>
         </main>
+          </Switch>
         <Footer />
       </div>
     </Router>
