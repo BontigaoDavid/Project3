@@ -1,14 +1,8 @@
-h2 {
-    margin-bottom: 20px;
-}
+.mvc-lesson h2 { margin-bottom: 20px; }
 
-p {
-    margin-bottom: 35px;
-}
+.mvc-lesson p { margin-bottom: 35px; }
 
-h4 {
-    margin-bottom: 30px;
-}
+.mvc-lesson h4 { margin-bottom: 30px; }
 
 #exp-img {
     width: 60%;
@@ -17,10 +11,9 @@ h4 {
     margin-top: 15px;
 }
 
-#folder-img {
-    margin-bottom: 50px;
-}
+#folder-img { margin-bottom: 50px; }
 
+<<<<<<< HEAD:client/src/components/lesson/logic/mvc/style.css
 #client-folder-div {
     margin-right: 25px;
 }
@@ -28,3 +21,6 @@ h4 {
 #client-folder-label {
     margin-bottom: 15px;
 }
+=======
+#client-folder-div { margin-right: 25px; }
+>>>>>>> b802c0ded1fee7d22e7f73e7138319b0222d3aa3:client/src/components/lesson/algorithms/mvc/style.css

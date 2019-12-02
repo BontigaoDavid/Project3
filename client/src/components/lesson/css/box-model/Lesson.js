@@ -5,22 +5,24 @@ import BoxButtons from "./Buttons";
 
 class BoxModel extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
 
-    this.handleClick = this.handleClick.bind(this)
+    this.handleClick = this.handleClick.bind(this);
   }
   state = {
+    border: "p-1",
     margin: "m-4",
-    border: "",
-    padding: "p-4"
-  }
+    padding: "p-4",
+    text: ""
+  };
 
   componentDidMount() {
     this.setState({
+      border: "p-1",
       margin: "m-4",
-      border: "",
-      padding: "p-4"
-    })
+      padding: "p-4",
+      text: ["border: 0.4em solid #FFD500", "margin: 1.5rem", "padding: 1.5rem"]
+    });
   }
 
   componentDidUpdate(prevProps) {
@@ -29,27 +31,39 @@ class BoxModel extends React.Component {
     // }
   }
 
-  handleClick = (stateVal) => {
+  handleClick = stateVal => {
     console.log(stateVal);
     this.setState(stateVal);
     console.log(this.state);
-}
+  };
 
-  render () {
+  render() {
     // console.log(this.state);
     return (
       <div className="row">
-        <div className="col-12 col-md-5 col-lg-6">
+        <div className="col-12 col-lg-5">
           <BoxButtons style={this.state} handler={this.handleClick} />
         </div>
-        <div className="col-12 col-md-7 col-lg-6">
+        <div className="col-12 col-lg-7">
           <div className="card">
-            <div className="card-header d-flex justify-content-center">
+            <div className="card-header">
               <BoxLegend />
             </div>
-            <div className="card-body d-flex justify-content-center">
-              <Box id="variable" margin={this.state.margin} padding={this.state.padding} />
-              <Box margin="m-4" padding="p-4"  />
+            <div className="card-body d-flex align-items-center justify-content-center">
+              <Box
+                id="variable"
+                margin={this.state.margin}
+                padding={this.state.padding}
+                border={this.state.border}
+              />
+              <Box margin="m-4" padding="p-4" border="p-1" />
+            </div>
+            <div className="card-footer d-flex justify-content-center">
+              <code>
+                {this.state.text[0]}; <br />
+                {this.state.text[1]}; <br />
+                {this.state.text[2]};
+              </code>
             </div>
           </div>
         </div>
