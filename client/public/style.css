@@ -25,6 +25,9 @@ footer {
   background-size: cover;
   background-position: center bottom;
 }
+.bg-gray {
+  background: #e6e6e6;
+}
 
 .header {
   /* background-image: linear-gradient(
