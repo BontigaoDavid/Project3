@@ -4,7 +4,7 @@ function Footer () {
   return (
     <footer className="py-3 footer">
       <div className="container">
-        <p>Hello, I'm a footer</p>
+        <p>&trade;</p>
       </div>
     </footer>
   );
