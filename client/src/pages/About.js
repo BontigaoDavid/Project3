@@ -7,10 +7,12 @@ function About() {
       <div className="container mb-4">
         <h2>About</h2>
         <p>
-          In this project we wish to put together some explanations of
-          some concepts we've come across and struggled with to deepen
-          understanding and help others who are struggling with these
-          concepts as well.
+          For this project, we wanted to address a common issue that others
+          in our industry would face and provide them with a solution. After a lot of
+          brainstorming, we came up with the idea to create a web application that simplifies
+          coding concepts that our cohort struggled with. This web application will help new 
+          developers have a better understanding of the subjects that we cover.
+
         </p>
       </div>
       <div className="py-4 my-3 bg-gray">
@@ -19,23 +21,24 @@ function About() {
             <div className="col-12 col-sm-4">
               <h3><i className="fas fa-exclamation-triangle"></i> The Problem</h3>
               <p>
-                It can be hard to understand some concepts or details about css,
-                javascript and algorithms. When you're taking an accelerated
-                course, it can be even harder to grasp.
+                Coding is a very massive subject and there is a lot of subject matter to go over. 
+                For new developers that are self-taught or those in an accelerated course,
+                the material can be very overwhelming. Subjects such as CSS, JavaScript, and algorithms
+                can be hard to grasp. We simplified these subjects in order to assist aspiring developers.   
               </p>
             </div>
             <div className="col-12 col-sm-4">
               <h3><i className="fas fa-bullseye"></i> The Goal</h3>
               <p>
-                Our goal is to try to explain concepts in a simple and
-                understandable way to make these things easier to pick up.
+                Our goal is to provide content that makes coding concepts simple
+                and understandable for aspiring developers to retain and put to future use.
               </p>
             </div>
             <div className="col-12 col-sm-4">
               <h3><i className="fas fa-wrench"></i> The Tools</h3>
               <p>
                 This project was built with React, Node, Express, mongoose,
-                axios, bcrypt, and SASS
+                axios and bcrypt.
               </p>
             </div>
           </div>
