@@ -10,6 +10,7 @@
   /* Color schemes to demo: #FC766AFF #B0B8B4FF #184A45FF */
   /* Color schemes to demo: #629677 #98B6B1 #FAC8CD #D7BCC8 */
   /* Color schemes to demo: #7DE2D1 #339989 #FFFAFB #131515 */
+  --secondary-bg: rgba(174, 14, 54, 0.3) 
 }
 
 body,
@@ -58,7 +59,7 @@ footer {
 }
 .btn {
   display: block;
-  background-color: var(--primary-alt);
+  background-color: var(--primary);
   color: var(--primary-font);
   /* This gave the buttons a shadow and combined with the on hover, would make button appear to pop out. */
   /* box-shadow: 0 5px 9px rgba(57, 57, 57, 0.4);
@@ -101,6 +102,10 @@ a {
 }
 a:hover { color: var(--primary-alt); }
 
-.toc{
-  border: var(--secondary-border);
+.toc, .toc .card-header, .toc .list-group-item {
+  border-color: var(--primary);
+}
+
+.toc .card-header {
+  background: var(--secondary-bg);
 }
