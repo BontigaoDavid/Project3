@@ -1,6 +1,10 @@
 :root {
-  --primary: #6e76ec;
+  /* Handles the color scheme of the website */
+  --primary: #535bc5;
   --primary-alt: #050650;
+  /* Handles the font colors of the entire website */
+  --primary-font: #ffffff;
+  --secondary-font: #ddd;
 }
 
 body,
@@ -36,24 +40,30 @@ footer {
     var(--primary-alt)
   ); */
   background-color: var(--primary);
-  color: white;
+}
+#title{
+  color: var(--primary-font);
+}
+#subtitle{
+  color: var(--secondary-font);
 }
 .navbar {
   background-color: var(--primary-alt);
-  color: white;
+  color: var(--primary-font);
 }
 .btn {
   display: block;
   background-color: var(--primary-alt);
-  color: white;
-  box-shadow: 0 5px 9px rgba(57, 57, 57, 0.4);
+  color: var(--primary-font);
+  /* This gave the buttons a shadow and combined with the on hover, would make button appear to pop out. */
+  /* box-shadow: 0 5px 9px rgba(57, 57, 57, 0.4);
   transform: translateY(0);
-  transition: 0.5s all ease;
+  transition: 0.5s all ease; */
 }
-.btn:hover {
+/* .btn:hover {
   transform: translateY(-3px);
   box-shadow: 6px 6px 10px rgba(57, 57, 57, 0.7);
-}
+} */
 .footer {
   /* background-image: linear-gradient(
     to bottom right,
@@ -61,6 +71,12 @@ footer {
     var(--primary-alt)
   ); */
   background-color: var(--primary);
-  color: white;
+  color: var(--primary-font);
   text-align: center;
+}
+.welcomeTitle{
+  color: var(--primary-font);
+}
+.welcomeSubtitle{
+  color: var(--secondary-font);
 }
