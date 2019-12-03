@@ -1,8 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { withRouter } from 'react-router'
+
 
 class Navbar extends React.Component {
+
   render() {
+    const { match, location, history } = this.props;
+    console.log(match);
     return (
       <nav className="navbar navbar-dark navbar-expand-lg text-right">
         <div className="container">
@@ -26,7 +31,7 @@ class Navbar extends React.Component {
                 <Link
                   to="/"
                   className={
-                    window.location.pathname === "/"
+                    location.pathname === "/"
                       ? "nav-link active"
                       : "nav-link"
                   }
@@ -38,7 +43,7 @@ class Navbar extends React.Component {
                 <Link
                   to="/lesson"
                   className={
-                    window.location === "/lesson"
+                    location.pathname.includes("/lesson")
                       ? "nav-link active"
                       : "nav-link"
                   }
@@ -50,7 +55,7 @@ class Navbar extends React.Component {
                 <Link
                   to="/about/"
                   className={
-                    window.location.pathname === "/about/"
+                    location.pathname.includes("/about/")
                       ? "nav-link active"
                       : "nav-link"
                   }
@@ -66,7 +71,7 @@ class Navbar extends React.Component {
                 <Link
                   to="/user"
                   className={
-                    window.location.pathname === "/user"
+                    location.pathname.includes("/user")
                       ? "nav-link active"
                       : "nav-link"
                   }
@@ -85,4 +90,4 @@ class Navbar extends React.Component {
   }
 }
 
-export default Navbar;
+export default withRouter(Navbar);

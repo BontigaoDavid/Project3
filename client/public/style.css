@@ -1,10 +1,15 @@
 :root {
   /* Handles the color scheme of the website */
-  --primary: #535bc5;
-  --primary-alt: #050650;
+  --primary: #AE0E36FF;
+  --primary-alt: #700000; 
+  --secondary: #FFFFFF;
   /* Handles the font colors of the entire website */
-  --primary-font: #ffffff;
-  --secondary-font: #ddd;
+  --primary-font: #FFFFFF;
+  --secondary-font: #dddddd;
+  --secondary-border: 1px solid #AE0E36FF;
+  /* Color schemes to demo: #FC766AFF #B0B8B4FF #184A45FF */
+  /* Color schemes to demo: #629677 #98B6B1 #FAC8CD #D7BCC8 */
+  /* Color schemes to demo: #7DE2D1 #339989 #FFFAFB #131515 */
 }
 
 body,
@@ -78,5 +83,24 @@ footer {
   color: var(--primary-font);
 }
 .welcomeSubtitle{
-  color: var(--secondary-font);
+  color: var(--primary-font);
+}
+.nav-tabs .nav-link {
+  background-color: #ddd;
+}
+
+#table-of-contents {
+  background: var(--secondary);
+  border: var(--secondary-border);
+  border-radius: 10px;
+  width: 40%;
+  padding: 50px;
+}
+a {
+  color: var(--primary)
+}
+a:hover { color: var(--primary-alt); }
+
+.toc{
+  border: var(--secondary-border);
 }

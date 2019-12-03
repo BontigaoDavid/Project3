@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // Page Global Includes
-import { Header, Navbar, Footer } from "./pages/includes/index";
+import { Header, Navbar } from "./pages/includes/index";
 
 // Pages
 import { Home, Profile, Lesson, About } from "./pages/index";
@@ -36,7 +36,7 @@ function App() {
           <Route exact path="/lesson/logic/time-complexity" component={timeComplexity} />
         </main>
           </Switch>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );
