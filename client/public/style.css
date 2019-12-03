@@ -1,12 +1,15 @@
 :root {
   /* Handles the color scheme of the website */
-  --primary: #535bc5;
-  --primary-alt: #050650;
-  --secondary: #D7D7E7;
+  --primary: #AE0E36FF;
+  --primary-alt: #700000; 
+  --secondary: #FFFFFF;
   /* Handles the font colors of the entire website */
-  --primary-font: #ffffff;
-  --secondary-font: #ddd;
-  --secondary-border: 1px solid #6767FF;
+  --primary-font: #FFFFFF;
+  --secondary-font: #000000;
+  --secondary-border: 1px solid #AE0E36FF;
+  /* Color schemes to demo: #FC766AFF #B0B8B4FF #184A45FF */
+  /* Color schemes to demo: #629677 #98B6B1 #FAC8CD #D7BCC8 */
+  /* Color schemes to demo: #7DE2D1 #339989 #FFFAFB #131515 */
 }
 
 body,
@@ -92,4 +95,12 @@ footer {
   border-radius: 10px;
   width: 40%;
   padding: 50px;
+}
+a {
+  color: var(--primary)
+}
+a:hover { color: var(--primary-alt); }
+
+.toc{
+  border: var(--secondary-border);
 }
