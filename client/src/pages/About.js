@@ -5,8 +5,8 @@ function About() {
   return (
     <div>
       <div className="container mb-4">
-        <h2>About</h2>
-        <p>
+        <h2 className="display-4" >About</h2>
+        <p className="lead">
           In this project we wish to put together some explanations of
           some concepts we've come across and struggled with to deepen
           understanding and help others who are struggling with these
