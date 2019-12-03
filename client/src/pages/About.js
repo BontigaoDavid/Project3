@@ -12,7 +12,6 @@ function About() {
           brainstorming, we came up with the idea to create a web application that simplifies
           coding concepts that our cohort struggled with. This web application will help new 
           developers have a better understanding of the subjects that we cover.
-
         </p>
       </div>
       <div className="py-4 my-3 bg-gray">

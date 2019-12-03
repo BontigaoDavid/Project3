@@ -26,18 +26,14 @@ body i {
   display: flex;
   flex-flow: column;
 }
-footer {
-  margin-top: auto;
-}
+footer { margin-top: auto; }
 
 .bg-img {
   background-image: url("./images/programming.jpg");
   background-size: cover;
   background-position: center bottom;
 }
-.bg-gray {
-  background: #e6e6e6;
-}
+.bg-gray { background: #e6e6e6; }
 
 .header {
   /* background-image: linear-gradient(
@@ -47,12 +43,9 @@ footer {
   ); */
   background-color: var(--primary);
 }
-#title{
-  color: var(--primary-font);
-}
-#subtitle{
-  color: var(--secondary-font);
-}
+#title{ color: var(--primary-font); }
+#subtitle{ color: var(--secondary-font); }
+
 .navbar {
   background-color: var(--primary-alt);
   color: var(--primary-font);
@@ -97,15 +90,16 @@ footer {
   width: 40%;
   padding: 50px;
 }
-a {
-  color: var(--primary)
-}
+a { color: var(--primary); }
 a:hover { color: var(--primary-alt); }
 
-.toc, .toc .card-header, .toc .list-group-item {
+.toc, 
+.toc .card-header, 
+.toc .list-group-item {
   border-color: var(--primary);
 }
 
 .toc .card-header {
   background: var(--secondary-bg);
+  font-weight: bold;
 }
