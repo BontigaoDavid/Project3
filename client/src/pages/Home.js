@@ -8,8 +8,8 @@ function Home() {
     <div className="container">
       <div className="row">
         <div className="col-12 col-md-6 col-lg-7">
-          <h2 className="text-light">Welcome to our learning platform!</h2>
-          <p className="text-light">
+          <h2 className="welcomeTitle">Welcome to our learning platform!</h2>
+          <p className="welcomeSubtitle">
             If you want to keep track of your progress, it's easy, just sign up!
           </p>
         </div>

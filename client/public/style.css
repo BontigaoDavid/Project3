@@ -1,7 +1,10 @@
 :root {
-  --primary: #6e76ec;
+  /* Handles the color scheme of the website */
+  --primary: #535bc5;
   --primary-alt: #050650;
-  --font: #ffffff;
+  /* Handles the font colors of the entire website */
+  --primary-font: #ffffff;
+  --secondary-font: #ddd;
 }
 
 body,
@@ -34,16 +37,21 @@ footer {
     var(--primary-alt)
   ); */
   background-color: var(--primary);
-  color: var(--font);
+}
+#title{
+  color: var(--primary-font);
+}
+#subtitle{
+  color: var(--secondary-font);
 }
 .navbar {
   background-color: var(--primary-alt);
-  color: var(--font);
+  color: var(--primary-font);
 }
 .btn {
   display: block;
   background-color: var(--primary-alt);
-  color: var(--font);
+  color: var(--primary-font);
   /* This gave the buttons a shadow and combined with the on hover, would make button appear to pop out. */
   /* box-shadow: 0 5px 9px rgba(57, 57, 57, 0.4);
   transform: translateY(0);
@@ -60,6 +68,12 @@ footer {
     var(--primary-alt)
   ); */
   background-color: var(--primary);
-  color: var(--font);
+  color: var(--primary-font);
   text-align: center;
+}
+.welcomeTitle{
+  color: var(--primary-font);
+}
+.welcomeSubtitle{
+  color: var(--secondary-font);
 }
