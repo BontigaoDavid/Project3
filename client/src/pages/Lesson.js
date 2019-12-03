@@ -6,7 +6,7 @@ function Lesson({ match }) {
   console.log(match);
 
   return (
-    <div className="container py-5">
+    <div className="container">
       <Router>
         <Route component={tableOfContents} />
         
