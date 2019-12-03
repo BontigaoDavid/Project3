@@ -202,7 +202,7 @@ class BoxButtons extends React.Component {
                 type="button"
                 className="btn btn-secondary border-left"
               >
-                left
+                Left
               </button>
             </div>
           </div>
