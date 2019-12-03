@@ -1,6 +1,7 @@
 :root {
   --primary: #6e76ec;
   --primary-alt: #050650;
+  --font: #ffffff;
 }
 
 body,
@@ -33,24 +34,25 @@ footer {
     var(--primary-alt)
   ); */
   background-color: var(--primary);
-  color: white;
+  color: var(--font);
 }
 .navbar {
   background-color: var(--primary-alt);
-  color: white;
+  color: var(--font);
 }
 .btn {
   display: block;
   background-color: var(--primary-alt);
-  color: white;
-  box-shadow: 0 5px 9px rgba(57, 57, 57, 0.4);
+  color: var(--font);
+  /* This gave the buttons a shadow and combined with the on hover, would make button appear to pop out. */
+  /* box-shadow: 0 5px 9px rgba(57, 57, 57, 0.4);
   transform: translateY(0);
-  transition: 0.5s all ease;
+  transition: 0.5s all ease; */
 }
-.btn:hover {
+/* .btn:hover {
   transform: translateY(-3px);
   box-shadow: 6px 6px 10px rgba(57, 57, 57, 0.7);
-}
+} */
 .footer {
   /* background-image: linear-gradient(
     to bottom right,
@@ -58,6 +60,6 @@ footer {
     var(--primary-alt)
   ); */
   background-color: var(--primary);
-  color: white;
+  color: var(--font);
   text-align: center;
 }
