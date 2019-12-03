@@ -8,9 +8,9 @@ function tableOfContents() {
 
             <div className="row">
                 <div className="col-12 col-md-4 d-flex">
-                    <div className="card justify-content-stretch w-100">
+                    <div className="card toc justify-content-stretch w-100">
                         <div className="card-header">CSS</div>
-                        <div className="card-body">
+                        <div className="card-body py-2">
                             <ul className="list-group list-group-flush">
                                 <li className="list-group-item">
                                     <a href="/lesson/css/box-model">Box Model</a>
@@ -20,9 +20,9 @@ function tableOfContents() {
                     </div>
                 </div>
                 <div className="col-12 col-md-4 d-flex">
-                    <div className="card justify-content-stretch w-100">
+                    <div className="card toc justify-content-stretch w-100">
                         <div className="card-header">ES6</div>
-                        <div className="card-body">
+                        <div className="card-body py-2">
                             <ul className="list-group list-group-flush">
                                 <li className="list-group-item">
                                     <a href="/lesson/es6/variables">Variables</a>
@@ -35,9 +35,9 @@ function tableOfContents() {
                     </div>
                 </div>
                 <div className="col-12 col-md-4 d-flex">
-                    <div className="card justify-content-stretch w-100">
+                    <div className="card toc justify-content-stretch w-100">
                         <div className="card-header">Algorithms</div>
-                        <div className="card-body">
+                        <div className="card-body py-2">
                             <ul className="list-group list-group-flush">
                                 <li className="list-group-item">
                                     <a href="/lesson/logic/mvc">Model-Views-Controller</a>
