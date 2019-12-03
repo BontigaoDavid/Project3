@@ -2,9 +2,11 @@
   /* Handles the color scheme of the website */
   --primary: #535bc5;
   --primary-alt: #050650;
+  --secondary: #D7D7E7;
   /* Handles the font colors of the entire website */
   --primary-font: #ffffff;
   --secondary-font: #ddd;
+  --secondary-border: 1px solid #6767FF;
 }
 
 body,
@@ -79,4 +81,15 @@ footer {
 }
 .welcomeSubtitle{
   color: var(--secondary-font);
+}
+.nav-tabs .nav-link {
+  background-color: #ddd;
+}
+
+#table-of-contents {
+  background: var(--secondary);
+  border: var(--secondary-border);
+  border-radius: 10px;
+  width: 40%;
+  padding: 50px;
 }
