@@ -5,7 +5,7 @@
   --secondary: #FFFFFF;
   /* Handles the font colors of the entire website */
   --primary-font: #FFFFFF;
-  --secondary-font: #000000;
+  --secondary-font: #dddddd;
   --secondary-border: 1px solid #AE0E36FF;
   /* Color schemes to demo: #FC766AFF #B0B8B4FF #184A45FF */
   /* Color schemes to demo: #629677 #98B6B1 #FAC8CD #D7BCC8 */
@@ -83,7 +83,7 @@ footer {
   color: var(--primary-font);
 }
 .welcomeSubtitle{
-  color: var(--secondary-font);
+  color: var(--primary-font);
 }
 .nav-tabs .nav-link {
   background-color: #ddd;
