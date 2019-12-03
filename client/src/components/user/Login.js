@@ -62,7 +62,7 @@ class Login extends Component {
 
   render() {
     return (
-      <form className="border bg-light p-3 rounded">
+      <form className="border bg-light p-3 rounded-bottom">
 
         <div
           className="alert alert-info text-center"
