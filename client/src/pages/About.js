@@ -30,15 +30,20 @@ function About() {
             <div className="col-12 col-sm-4">
               <h3><i className="fas fa-bullseye"></i> The Goal</h3>
               <p>
-                Our goal is to provide content that makes coding concepts simple
+                Our goal is to be masters of the subjects that we cover
+                in order to provide content that makes coding concepts simple
                 and understandable for aspiring developers to retain and put to future use.
+                We plan on mastering more concepts in the future and building more content
+                for this web application.
+                
               </p>
             </div>
             <div className="col-12 col-sm-4">
               <h3><i className="fas fa-wrench"></i> The Tools</h3>
               <p>
-                This project was built with React, Node, Express, mongoose,
-                axios and bcrypt.
+                This project was built mainly with React, utilizing JSX to create the web application
+                that follows the Model-Views-Controller design pattern. This project was also build with Node, Express, mongoose,
+                axios and bcrypt. Our front-end was polished with Bootstrap and CSS3.
               </p>
             </div>
           </div>
