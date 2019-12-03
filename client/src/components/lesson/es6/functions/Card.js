@@ -10,7 +10,7 @@ export function CardHeader(props){
 
 export function CardBody(props){
   return (
-    <div className="card-body p-2">
+    <div className="card-body p-2 ">
       {props.children}
 
     </div>

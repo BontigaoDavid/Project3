@@ -29,8 +29,8 @@ class Function extends Component {
           </div>
         </div>
         <div className="row">
-          <div className="col-6 col-lg-6 col-md-12 col-sm-12">
-            <div className="card mb-2">
+          <div className="col-6 col-lg-6 col-md-12 col-sm-12 d-inline-flex">
+            <div className="card align-items-stretch">
               <CardHeader
                 style={
                   this.state.clicked < 5
@@ -153,8 +153,8 @@ class Function extends Component {
               </CardBody>
             </div>
           </div>
-          <div className="col-6 col-lg-6 col-md-12 col-sm-12">
-            <div className="card mb-2">
+          <div className="col-6 col-lg-6 col-md-12 col-sm-12 d-inline-flex">
+            <div className="card mb-2 align-items-stretch">
               <CardHeader
                 style={
                   this.state.clicked < 5
