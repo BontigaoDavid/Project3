@@ -49,7 +49,7 @@ class BoxModel extends React.Component {
       <div>
         <div className="container">
           <nav aria-label="breadcrumb">
-            <ol className="breadcrumb bg-transparent pl-0">
+            <ol className="breadcrumb bg-transparent p-0 mb-3 d-flex justify-content-end">
               <li className="breadcrumb-item" aria-current="page">
                 <a href="/">Home</a>
               </li>
@@ -57,7 +57,7 @@ class BoxModel extends React.Component {
                 <a href="/lesson">Lessons</a>
               </li>
               <li className="breadcrumb-item" aria-current="page">
-                <a href="/lesson/css/box-model">CSS Box Models</a>
+                <a href="/lesson/css/box-model">CSS Box Model</a>
               </li>
             </ol>
           </nav>
