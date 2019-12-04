@@ -5,7 +5,20 @@ import {FormBtn} from "../../../Form";
 function mvc() {
     return (
         <div className="container">
-            `<div className="row mvc-lesson ">
+            <nav aria-label="breadcrumb">
+                <ol className="breadcrumb bg-transparent p-0 mb-3 d-flex justify-content-end">
+                    <li className="breadcrumb-item" aria-current="page">
+                        <a href="/">Home</a>
+                    </li>
+                    <li className="breadcrumb-item" aria-current="page">
+                        <a href="/lesson">Lessons</a>
+                    </li>
+                    <li className="breadcrumb-item" aria-current="page">
+                        <a href="/lesson/logic/mvc">Model-View-Controller (MVC) Model</a>
+                    </li>
+                </ol>
+            </nav>
+            <div className="row mvc-lesson ">
                 <h2>Model-Views-Controller (MVC)</h2>
                 <div>
                     <img id="exp-img" className="d-block mx-auto" src={require("./explanationimage.png")} alt="explanation" />

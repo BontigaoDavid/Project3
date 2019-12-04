@@ -23,6 +23,19 @@ class Variables extends Component {
   render() {
     return (
       <div className="container">
+        <nav aria-label="breadcrumb">
+          <ol className="breadcrumb bg-transparent p-0 mb-3 d-flex justify-content-end">
+            <li className="breadcrumb-item" aria-current="page">
+              <a href="/">Home</a>
+            </li>
+            <li className="breadcrumb-item" aria-current="page">
+              <a href="/lesson">Lessons</a>
+            </li>
+            <li className="breadcrumb-item" aria-current="page">
+              <a href="/lesson/es6/variables">ES6 Variables</a>
+            </li>
+          </ol>
+        </nav>
         <div className="row">
           <div className="col-12">
             <h2>ES6 Variables</h2>
@@ -48,9 +61,9 @@ class Variables extends Component {
                       : { display: "none" }
                   }
                 >
-                  In ES5, var is a generic declaration to define variables. It can be
-                  used globally and can be changed outside of the scope it is
-                  being used.
+                  In ES5, var is a generic declaration to define variables. It
+                  can be used globally and can be changed outside of the scope
+                  it is being used.
                 </p>
                 <img
                   src={require("../images/testVar.png")}

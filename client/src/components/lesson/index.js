@@ -42,37 +42,14 @@ function tableOfContents() {
                                 <li className="list-group-item">
                                     <a href="/lesson/logic/mvc">Model-Views-Controller</a>
                                 </li>
-                                <li className="list-group-item">
+                                {/* <li className="list-group-item">
                                     <a href="/lesson/logic/time-complexity">Big O and Time Complexity</a>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-{/* 
-            <div id="table-of-contents" className="col-12 col-md-6 p-4">
-                <ul className="list-unstyled">
-                    <li>
-                        CSS
-
-                        
-                    </li>
-
-                    <li>
-                        ES6
-
-                        
-                    </li>
-
-                    <li>
-                        Logic
-
-                        
-                    </li>
-                </ul>
-            </div> */}
-
         </div>
     )
 }
