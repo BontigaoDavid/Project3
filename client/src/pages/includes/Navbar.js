@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { withRouter } from 'react-router'
+import { withRouter } from 'react-router';
 
 
 class Navbar extends React.Component {
@@ -53,9 +53,9 @@ class Navbar extends React.Component {
               </li>
               <li className="nav-item">
                 <Link
-                  to="/about/"
+                  to="/about"
                   className={
-                    location.pathname.includes("/about/")
+                    location.pathname.includes("/about")
                       ? "nav-link active"
                       : "nav-link"
                   }
@@ -77,6 +77,18 @@ class Navbar extends React.Component {
                   }
                 >
                   <i className="fas fa-user"></i> Profile
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="/feedback"
+                  className={
+                    location.pathname === "/feedback"
+                      ? "nav-link active"
+                      : "nav-link"
+                  }
+                >
+                  <i className="fas fa-comment"></i> Feedback
                 </Link>
               </li>
             </ul>
