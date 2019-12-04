@@ -15,12 +15,16 @@ function About() {
           developers have a better understanding of the subjects that we cover.
         </p>
       </div>
-      <div className="py-5 mb-3 bg-gray">
+      <div className="py-4 mt-3 bg-gray">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-sm-4">
-              <h3 className=""><i className="fas fa-exclamation-triangle"></i> The Problem</h3>
-    
+            <div className="col-12 col-sm-4 d-inline-flex align-items-center">
+              <img className="w-100" src="https://source.unsplash.com/HUiSySuofY0/800x450" alt="gray mini figure under white sneaker" />
+            </div>
+            <div className="col-12 col-sm-8 d-inline-flex  flex-column justify-content-center">
+              <h3>
+                <i className="fas fa-exclamation-triangle"></i> The Problem
+              </h3>
               <p>
                 Coding is a very massive subject and there is a lot of subject
                 matter to go over. For new developers that are self-taught or
