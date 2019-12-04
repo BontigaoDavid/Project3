@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Header, Navbar } from "./pages/includes/index";
 
 // Pages
-import { Home, Profile, Lesson, About } from "./pages/index";
+import { Home, Profile, Lesson, About, Feedback } from "./pages/index";
 
 // import tableOfContents from "./components/lesson/index";
 import BoxModel from "./components/lesson/css/box-model/Lesson";
@@ -34,6 +34,7 @@ function App() {
 
           <Route exact path="/lesson/logic/mvc" component={MVC} />
           <Route exact path="/lesson/logic/time-complexity" component={timeComplexity} />
+          <Route exact path="/feedback" component={Feedback} />
         </main>
           </Switch>
         {/* <Footer /> */}
