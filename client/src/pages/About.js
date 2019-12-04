@@ -15,7 +15,7 @@ function About() {
           developers have a better understanding of the subjects that we cover.
         </p>
       </div>
-      <div className="py-4 mt-3 bg-gray">
+      <div className="py-4">
         <div className="container">
           <div className="row">
             <div className="col-12 col-sm-4 d-inline-flex align-items-center">
@@ -37,7 +37,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="py-4 mt-3">
+      <div className="py-4 mt-3 bg-gray">
         <div className="container">
           <div className="row">
             <div className="col-12 col-sm-8 d-inline-flex flex-column justify-content-center">
@@ -58,7 +58,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="py-4 mt-3 bg-gray">
+      <div className="py-4 mt-3">
         <div className="container">
           <div className="row">
             <div className="col-12 col-sm-4 d-inline-flex align-items-center">
@@ -79,7 +79,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="row py-4">
+      <div className="row py-4 bg-gray">
         <div className="container">
           <h3><i className="fas fa-users"></i> The Team</h3>
           <div className="row">
