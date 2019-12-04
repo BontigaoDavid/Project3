@@ -41,7 +41,7 @@ footer { margin-top: auto; }
 }
 
 .bg-gray { background: #e6e6e6; }
-
+.bg-important { background: var(--secondary);}
 
 .header {
   /* background-image: linear-gradient(
