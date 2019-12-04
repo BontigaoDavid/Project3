@@ -33,6 +33,13 @@ footer { margin-top: auto; }
   background-size: cover;
   background-position: center bottom;
 }
+
+.bg-about {
+  background-image: url("./images/bg-about.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 .bg-gray { background: #e6e6e6; }
 
 .header {

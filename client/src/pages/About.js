@@ -4,9 +4,9 @@ import Team from "../components/About/Team";
 function About() {
   return (
     <div>
-      <div className="" style={{backgroundImage: "url(https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80)"}}>
-        <h2 className="text-center display-4 mb-5 pt-5">About</h2>
-        <p className="lead w-50 pb-5 mx-auto mb-0">
+      <div className="bg-about" >
+        <h2 className="text-center display-4 mb-5 pt-5 text-light">About</h2>
+        <p className="lead w-50 pb-5 mx-auto mb-0 text-light">
           For this project, we wanted to address a common issue that others
           in our industry would face and provide them with a solution. After a lot of
           brainstorming, we came up with the idea to create a web application that simplifies
