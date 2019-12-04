@@ -6,10 +6,10 @@ import { withRouter } from 'react-router'
 class Navbar extends React.Component {
 
   render() {
-    const { match, location, history } = this.props;
+    const { match, location } = this.props;
     console.log(match);
     return (
-      <nav className="navbar navbar-dark navbar-expand-lg text-right">
+      <nav className="navbar navbar-dark navbar-expand-lg">
         <div className="container">
           {/* <a className="navbar-brand" href="/">
             Navbar w/ text
