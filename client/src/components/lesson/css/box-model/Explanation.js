@@ -17,7 +17,7 @@ function Explanation() {
         </div>
       </div>
 
-      <div className="bg-gray py-3 my-3">
+      <div className="bg-gray py-3 my-3 mb-4">
         <div className="container">
 
         <div className="row">

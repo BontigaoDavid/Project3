@@ -1,4 +1,5 @@
 import React from "react";
+import Next from "./Next";
 import Explanation from "./Explanation";
 import Box from "./Box";
 import BoxLegend from "./Legend";
@@ -27,12 +28,6 @@ class BoxModel extends React.Component {
     });
   }
 
-  // componentDidUpdate(prevProps) {
-  //   // if (this.props.userID !== prevProps.userID) {
-  //   //   this.fetchData(this.props.userID);
-  //   // }
-  // }
-
   handleReset = () => {
     this.setState({
       border: "p-1",
@@ -53,6 +48,19 @@ class BoxModel extends React.Component {
     return (
       <div>
         <div className="container">
+          <nav aria-label="breadcrumb">
+            <ol className="breadcrumb bg-transparent pl-0">
+              <li className="breadcrumb-item" aria-current="page">
+                <a href="/">Home</a>
+              </li>
+              <li className="breadcrumb-item" aria-current="page">
+                <a href="/lesson">Lessons</a>
+              </li>
+              <li className="breadcrumb-item" aria-current="page">
+                <a href="/lesson/css/box-model">CSS Box Models</a>
+              </li>
+            </ol>
+          </nav>
           <h2>CSS Box Model</h2>
         </div>
 
@@ -93,6 +101,12 @@ class BoxModel extends React.Component {
               >
                 Reset Box Model
               </button>
+            </div>
+          </div>
+          <div className="row mt-5">
+            <div className="col-12 col-sm-6"></div>
+            <div className="col-12 col-sm-6">
+              <Next />
             </div>
           </div>
         </div>
