@@ -21,7 +21,7 @@ class Profile extends Component {
 
   handleProfile = () => {
     const userObj = JSON.parse(sessionStorage.getItem("user"));
-    console.log(userObj)
+    // console.log(userObj)
     
     this.setState ({
       username: userObj.username,
