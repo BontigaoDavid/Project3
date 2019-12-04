@@ -4,9 +4,9 @@ import Team from "../components/About/Team";
 function About() {
   return (
     <div>
-      <div className="container mb-4">
-        <h2>About</h2>
-        <p>
+      <div className="" style={{backgroundImage: "url(https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80)"}}>
+        <h2 className="text-center display-4 mb-5 pt-5">About</h2>
+        <p className="lead w-50 pb-5 mx-auto mb-0">
           For this project, we wanted to address a common issue that others
           in our industry would face and provide them with a solution. After a lot of
           brainstorming, we came up with the idea to create a web application that simplifies
@@ -14,11 +14,11 @@ function About() {
           developers have a better understanding of the subjects that we cover.
         </p>
       </div>
-      <div className="py-4 my-3 bg-gray">
+      <div className="py-5 mb-3 bg-gray">
         <div className="container">
           <div className="row">
             <div className="col-12 col-sm-4">
-              <h3><i className="fas fa-exclamation-triangle"></i> The Problem</h3>
+              <h3 className=""><i className="fas fa-exclamation-triangle"></i> The Problem</h3>
               <p>
                 Coding is a very massive subject and there is a lot of subject matter to go over. 
                 For new developers that are self-taught or those in an accelerated course,

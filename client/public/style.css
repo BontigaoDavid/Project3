@@ -103,3 +103,7 @@ a:hover { color: var(--primary-alt); }
   background: var(--secondary-bg);
   font-weight: bold;
 }
+
+#about-div {
+  overflow: hidden;
+}

@@ -22,10 +22,10 @@ function App() {
         <Navbar />
           <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
         <main className="my-5">
           <Route exact path="/user" component={Profile} />
           <Route exact path="/lesson" component={Lesson} />
-          <Route exact path="/about" component={About} />
           
           <Route exact path="/lesson/css/box-model" component={BoxModel} />
 
