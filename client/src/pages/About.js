@@ -4,27 +4,23 @@ import Team from "../components/About/Team";
 function About() {
   return (
     <div>
-      <div className="container mb-4">
-        <h2>About</h2>
-        <p>
-          For this project, we wanted to address a common issue that others in
-          our industry would face and provide them with a solution. After a lot
-          of brainstorming, we came up with the idea to create a web application
-          that simplifies coding concepts that our cohort struggled with. This
-          web application will help new developers have a better understanding
-          of the subjects that we cover.
+    
+      <div className="bg-about" >
+        <h2 className="text-center display-4 mb-5 pt-5 text-light">About</h2>
+        <p className="lead w-50 pb-5 mx-auto mb-0 text-light">
+          For this project, we wanted to address a common issue that others
+          in our industry would face and provide them with a solution. After a lot of
+          brainstorming, we came up with the idea to create a web application that simplifies
+          coding concepts that our cohort struggled with. This web application will help new 
+          developers have a better understanding of the subjects that we cover.
         </p>
       </div>
-      <div className="py-4 mt-3 bg-gray">
+      <div className="py-5 mb-3 bg-gray">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-sm-4 d-inline-flex align-items-center">
-              <img className="w-100" src="https://source.unsplash.com/HUiSySuofY0/800x450" alt="gray mini figure under white sneaker" />
-            </div>
-            <div className="col-12 col-sm-8 d-inline-flex  flex-column justify-content-center">
-              <h3>
-                <i className="fas fa-exclamation-triangle"></i> The Problem
-              </h3>
+            <div className="col-12 col-sm-4">
+              <h3 className=""><i className="fas fa-exclamation-triangle"></i> The Problem</h3>
+    
               <p>
                 Coding is a very massive subject and there is a lot of subject
                 matter to go over. For new developers that are self-taught or
