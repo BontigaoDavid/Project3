@@ -33,7 +33,9 @@ footer { margin-top: auto; }
   background-size: cover;
   background-position: center bottom;
 }
-.bg-gray { background: #e6e6e6; }
+.bg-gray { background: #e6e6e6; } 
+.bg-important { background: var(--secondary-bg); }
+/* #e6e6e6; */
 
 .header {
   /* background-image: linear-gradient(
