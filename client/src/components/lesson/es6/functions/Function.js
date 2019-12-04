@@ -73,6 +73,15 @@ class Function extends Component {
                   }
                   alt="example of es5 function"
                 />
+                <img
+                  src={require("../images/ES5&6ReturnConsole.png")}
+                  style={
+                    this.state.clicked === 1
+                      ? { display: "block" }
+                      : { display: "none" }
+                  }
+                  alt="example of es5 function"
+                />
                 <p
                   style={
                     this.state.clicked === 1
@@ -86,6 +95,15 @@ class Function extends Component {
                 </p>
                 <img
                   src={require("../images/ES5Return.png")}
+                  style={
+                    this.state.clicked === 2
+                      ? { display: "block" }
+                      : { display: "none" }
+                  }
+                  alt="example of es5 function"
+                />
+                <img
+                  src={require("../images/ES5ReturnConsole.png")}
                   style={
                     this.state.clicked === 2
                       ? { display: "block" }
@@ -113,6 +131,15 @@ class Function extends Component {
                   }
                   alt="es5 this example"
                 ></img>
+                <img
+                  src={require("../images/ES5ThisConsole.png")}
+                  style={
+                    this.state.clicked === 3
+                      ? { display: "block" }
+                      : { display: "none" }
+                  }
+                  alt="es5 this example"
+                ></img>
                 <p
                   style={
                     this.state.clicked === 3
@@ -130,6 +157,15 @@ class Function extends Component {
                 </p>
                 <img
                   src={require("../images/ES5ThisError.png")}
+                  style={
+                    this.state.clicked === 4
+                      ? { display: "block" }
+                      : { display: "none" }
+                  }
+                  alt="es5 issues with this"
+                ></img>
+                 <img
+                  src={require("../images/ES5ThisErrorConsole.png")}
                   style={
                     this.state.clicked === 4
                       ? { display: "block" }
@@ -198,6 +234,15 @@ class Function extends Component {
                   }
                   alt="example of es6 function"
                 />
+                <img
+                  src={require("../images/ES5&6ReturnConsole.png")}
+                  style={
+                    this.state.clicked === 1
+                      ? { display: "block" }
+                      : { display: "none" }
+                  }
+                  alt="example of es6 function"
+                />
                 <p
                   style={
                     this.state.clicked === 1
@@ -212,6 +257,15 @@ class Function extends Component {
                 </p>
                 <img
                   src={require("../images/ES6ReturnBlock.png")}
+                  style={
+                    this.state.clicked === 2
+                      ? { display: "block" }
+                      : { display: "none" }
+                  }
+                  alt="example of implicit returns"
+                />
+                 <img
+                  src={require("../images/ES6ReturnBlockConsole.png")}
                   style={
                     this.state.clicked === 2
                       ? { display: "block" }
@@ -241,6 +295,15 @@ class Function extends Component {
                   }
                   alt="es6 this example"
                 ></img>
+                <img
+                  src={require("../images/ES6ThisConsole.png")}
+                  style={
+                    this.state.clicked === 3
+                      ? { display: "block" }
+                      : { display: "none" }
+                  }
+                  alt="es6 this example"
+                ></img>
                 <p
                   style={
                     this.state.clicked === 3
@@ -257,6 +320,15 @@ class Function extends Component {
                 </p>
                 <img
                   src={require("../images/ES6ThisLexical.png")}
+                  style={
+                    this.state.clicked === 4
+                      ? { display: "block" }
+                      : { display: "none" }
+                  }
+                  alt="es6 lexical scope example"
+                ></img>
+                <img
+                  src={require("../images/ES6ThisLexicalConsole.png")}
                   style={
                     this.state.clicked === 4
                       ? { display: "block" }
