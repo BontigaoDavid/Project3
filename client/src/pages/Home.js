@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Usertab from "../components/user/Usertab";
-import Parallax from "parallax-js";
+// import Parallax from "parallax-js";
 
 class Home extends Component {
 
