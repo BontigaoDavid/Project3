@@ -74,6 +74,15 @@ class Variables extends Component {
                   }
                   alt="example of var scope"
                 />
+                <img
+                  src={require("../images/testVarConsole.png")}
+                  style={
+                    this.state.clicked === 1
+                      ? { display: "block" }
+                      : { display: "none" }
+                  }
+                  alt="example of var scope"
+                />
                 <p
                   style={
                     this.state.clicked === 1
@@ -87,6 +96,15 @@ class Variables extends Component {
                 </p>
                 <img
                   src={require("../images/testVarArray.png")}
+                  style={
+                    this.state.clicked === 2
+                      ? { display: "block" }
+                      : { display: "none" }
+                  }
+                  alt="example of var array"
+                />
+                 <img
+                  src={require("../images/testVarArrayConsole.png")}
                   style={
                     this.state.clicked === 2
                       ? { display: "block" }
@@ -154,6 +172,15 @@ class Variables extends Component {
                   }
                   alt="example of let scope"
                 />
+                <img
+                  src={require("../images/testLetConsole.png")}
+                  style={
+                    this.state.clicked === 1
+                      ? { display: "block" }
+                      : { display: "none" }
+                  }
+                  alt="example of let scope"
+                />
                 <p
                   style={
                     this.state.clicked === 1
@@ -169,6 +196,24 @@ class Variables extends Component {
                 </p>
                 <img
                   src={require("../images/testConstArray.png")}
+                  style={
+                    this.state.clicked === 2
+                      ? { display: "block" }
+                      : { display: "none" }
+                  }
+                  alt="example of const array"
+                />
+                <img
+                  src={require("../images/testConstArrayConsole1.png")}
+                  style={
+                    this.state.clicked === 2
+                      ? { display: "block" }
+                      : { display: "none" }
+                  }
+                  alt="example of const array"
+                />
+                <img
+                  src={require("../images/testConstArrayConsole2.png")}
                   style={
                     this.state.clicked === 2
                       ? { display: "block" }
