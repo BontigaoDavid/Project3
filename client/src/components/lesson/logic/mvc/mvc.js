@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import {FormBtn} from "../../../Form";
+// import {FormBtn} from "../../../Form";
 
 function mvc() {
     return (
@@ -58,7 +58,7 @@ function mvc() {
                 </div>
             </div>
             
-            <FormBtn style={{marginTop: "50px"}}>Next</FormBtn>
+            {/* <FormBtn style={{marginTop: "50px"}}>Next</FormBtn> */}
         </div>
     )
 }
