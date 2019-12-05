@@ -95,7 +95,8 @@ function About() {
               user="Johnphtdo"
               src={require("../components/About/images/john-cropped.jpg")}
               github="Johnphtdo"
-              linkedin="john-do-a02a4661"
+              linkedin="johnphtdo"
+              portfolio="https://johnphtdo.herokuapp.com/"
             />
             <Team
               name="Jasmine Tsai"
