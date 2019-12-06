@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // Page Global Includes
-import { Header, Navbar } from "./pages/includes/index";
+import { Header, Navbar, Footer } from "./pages/includes/index";
 
 // Pages
 import { Home, Profile, Lesson, About, Feedback } from "./pages/index";
@@ -37,7 +37,7 @@ function App() {
           <Route exact path="/feedback" component={Feedback} />
         </main>
           </Switch>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Router>
   );
