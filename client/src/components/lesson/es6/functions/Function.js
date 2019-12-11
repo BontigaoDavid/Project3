@@ -21,6 +21,8 @@ class Function extends Component {
   };
 
   render() {
+    const show = {display: "block"};
+    const none = {display: "none"};
     return (
       <div className="container">
         <nav aria-label="breadcrumb">
@@ -47,8 +49,8 @@ class Function extends Component {
               <CardHeader
                 style={
                   this.state.clicked < 5
-                    ? { display: "block" }
-                    : { display: "none" }
+                    ? show
+                    : none
                 }
               >
                 ES5
@@ -57,8 +59,8 @@ class Function extends Component {
                 <p
                   style={
                     this.state.clicked === 0
-                      ? { display: "block", paddingTop: "1rem" }
-                      : { display: "none" }
+                      ? {show, paddingTop: "1rem" }
+                      : none
                   }
                 >
                   For this lesson, we will be demonstrating the different syntax
@@ -68,8 +70,8 @@ class Function extends Component {
                   src={require("../images/ES5Return.png")}
                   style={
                     this.state.clicked === 1
-                      ? { display: "block" }
-                      : { display: "none" }
+                      ? show
+                      : none
                   }
                   alt="example of es5 function"
                 />
@@ -77,16 +79,16 @@ class Function extends Component {
                   src={require("../images/ES5&6ReturnConsole.png")}
                   style={
                     this.state.clicked === 1
-                      ? { display: "block" }
-                      : { display: "none" }
+                      ? show
+                      : none
                   }
                   alt="example of es5 function"
                 />
                 <p
                   style={
                     this.state.clicked === 1
-                      ? { display: "block", paddingTop: "1rem" }
-                      : { display: "none" }
+                      ? {show, paddingTop: "1rem" }
+                      : none
                   }
                 >
                   In this example, we defined a simple function with params for
@@ -97,8 +99,8 @@ class Function extends Component {
                   src={require("../images/ES5Return.png")}
                   style={
                     this.state.clicked === 2
-                      ? { display: "block" }
-                      : { display: "none" }
+                      ? show
+                      : none
                   }
                   alt="example of es5 function"
                 />
@@ -106,16 +108,16 @@ class Function extends Component {
                   src={require("../images/ES5ReturnConsole.png")}
                   style={
                     this.state.clicked === 2
-                      ? { display: "block" }
-                      : { display: "none" }
+                      ? show
+                      : none
                   }
                   alt="example of es5 function"
                 />
                 <p
                   style={
                     this.state.clicked === 2
-                      ? { display: "block", paddingTop: "1rem" }
-                      : { display: "none" }
+                      ? {show, paddingTop: "1rem" }
+                      : none
                   }
                 >
                   In this example, we defined a simple function with params for
@@ -126,8 +128,8 @@ class Function extends Component {
                   src={require("../images/ES5This.png")}
                   style={
                     this.state.clicked === 3
-                      ? { display: "block" }
-                      : { display: "none" }
+                      ? show
+                      : none
                   }
                   alt="es5 this example"
                 ></img>
@@ -135,16 +137,16 @@ class Function extends Component {
                   src={require("../images/ES5ThisConsole.png")}
                   style={
                     this.state.clicked === 3
-                      ? { display: "block" }
-                      : { display: "none" }
+                      ? show
+                      : none
                   }
                   alt="es5 this example"
                 ></img>
                 <p
                   style={
                     this.state.clicked === 3
-                      ? { display: "block", paddingTop: "1rem" }
-                      : { display: "none" }
+                      ? {show, paddingTop: "1rem" }
+                      : none
                   }
                 >
                   In this example, the console will log the string when we call
@@ -159,8 +161,8 @@ class Function extends Component {
                   src={require("../images/ES5ThisError.png")}
                   style={
                     this.state.clicked === 4
-                      ? { display: "block" }
-                      : { display: "none" }
+                      ? show
+                      : none
                   }
                   alt="es5 issues with this"
                 ></img>
@@ -168,16 +170,16 @@ class Function extends Component {
                   src={require("../images/ES5ThisErrorConsole.png")}
                   style={
                     this.state.clicked === 4
-                      ? { display: "block" }
-                      : { display: "none" }
+                      ? show
+                      : none
                   }
                   alt="es5 issues with this"
                 ></img>
                 <p
                   style={
                     this.state.clicked === 4
-                      ? { display: "block", paddingTop: "1rem" }
-                      : { display: "none" }
+                      ? {show, paddingTop: "1rem" }
+                      : none
                   }
                 >
                   As mentioned in the previous example, "this" is bound globally
@@ -190,8 +192,8 @@ class Function extends Component {
                 <p
                   style={
                     this.state.clicked === 5
-                      ? { display: "block", paddingTop: "1rem" }
-                      : { display: "none" }
+                      ? {show, paddingTop: "1rem" }
+                      : none
                   }
                 >
                   Thank you for using Simply Conceptual. This is the end of our
@@ -207,8 +209,8 @@ class Function extends Component {
               <CardHeader
                 style={
                   this.state.clicked < 5
-                    ? { display: "block" }
-                    : { display: "none" }
+                    ? show
+                    : none
                 }
               >
                 ES6
@@ -217,8 +219,8 @@ class Function extends Component {
                 <p
                   style={
                     this.state.clicked === 0
-                      ? { display: "block", paddingTop: "1rem" }
-                      : { display: "none" }
+                      ? {show, paddingTop: "1rem" }
+                      : none
                   }
                 >
                   The Fat arrow function is one of the popular features of ES6.
@@ -229,8 +231,8 @@ class Function extends Component {
                   src={require("../images/ES6Return.png")}
                   style={
                     this.state.clicked === 1
-                      ? { display: "block" }
-                      : { display: "none" }
+                      ? show
+                      : none
                   }
                   alt="example of es6 function"
                 />
@@ -238,16 +240,16 @@ class Function extends Component {
                   src={require("../images/ES5&6ReturnConsole.png")}
                   style={
                     this.state.clicked === 1
-                      ? { display: "block" }
-                      : { display: "none" }
+                      ? show
+                      : none
                   }
                   alt="example of es6 function"
                 />
                 <p
                   style={
                     this.state.clicked === 1
-                      ? { display: "block", paddingTop: "1rem" }
-                      : { display: "none" }
+                      ? {show, paddingTop: "1rem" }
+                      : none
                   }
                 >
                   In this example, we can already see how much shorter the
@@ -259,8 +261,8 @@ class Function extends Component {
                   src={require("../images/ES6ReturnBlock.png")}
                   style={
                     this.state.clicked === 2
-                      ? { display: "block" }
-                      : { display: "none" }
+                      ? show
+                      : none
                   }
                   alt="example of implicit returns"
                 />
@@ -268,16 +270,16 @@ class Function extends Component {
                   src={require("../images/ES6ReturnBlockConsole.png")}
                   style={
                     this.state.clicked === 2
-                      ? { display: "block" }
-                      : { display: "none" }
+                      ? show
+                      : none
                   }
                   alt="example of implicit returns"
                 />
                 <p
                   style={
                     this.state.clicked === 2
-                      ? { display: "block", paddingTop: "1rem" }
-                      : { display: "none" }
+                      ? {show, paddingTop: "1rem" }
+                      : none
                   }
                 >
                   In the first example, we kept the function in the same block,
@@ -290,8 +292,8 @@ class Function extends Component {
                   src={require("../images/ES6This.png")}
                   style={
                     this.state.clicked === 3
-                      ? { display: "block" }
-                      : { display: "none" }
+                      ? show
+                      : none
                   }
                   alt="es6 this example"
                 ></img>
@@ -299,16 +301,16 @@ class Function extends Component {
                   src={require("../images/ES6ThisConsole.png")}
                   style={
                     this.state.clicked === 3
-                      ? { display: "block" }
-                      : { display: "none" }
+                      ? show
+                      : none
                   }
                   alt="es6 this example"
                 ></img>
                 <p
                   style={
                     this.state.clicked === 3
-                      ? { display: "block", paddingTop: "1rem" }
-                      : { display: "none" }
+                      ? {show, paddingTop: "1rem" }
+                      : none
                   }
                 >
                   In ES6, "this" is lexically bound, meaning it uses "this" from
@@ -322,8 +324,8 @@ class Function extends Component {
                   src={require("../images/ES6ThisLexical.png")}
                   style={
                     this.state.clicked === 4
-                      ? { display: "block" }
-                      : { display: "none" }
+                      ? show
+                      : none
                   }
                   alt="es6 lexical scope example"
                 ></img>
@@ -331,16 +333,16 @@ class Function extends Component {
                   src={require("../images/ES6ThisLexicalConsole.png")}
                   style={
                     this.state.clicked === 4
-                      ? { display: "block" }
-                      : { display: "none" }
+                      ? show
+                      : none
                   }
                   alt="es6 lexical scope example"
                 ></img>
                 <p
                   style={
                     this.state.clicked === 4
-                      ? { display: "block", paddingTop: "1rem" }
-                      : { display: "none" }
+                      ? {show, paddingTop: "1rem" }
+                      : none
                   }
                 >
                   For this example, we demonstrate what lexical scoping is and
@@ -353,8 +355,8 @@ class Function extends Component {
                 <p
                   style={
                     this.state.clicked === 5
-                      ? { display: "block", paddingTop: "1rem" }
-                      : { display: "none" }
+                      ? {show, paddingTop: "1rem" }
+                      : none
                   }
                 >
                   Click on next if you would like to move onto our lesson over
@@ -371,8 +373,8 @@ class Function extends Component {
               onClick={this.handleUnclick}
               style={
                 this.state.clicked > 0
-                  ? { display: "block" }
-                  : { display: "none" }
+                  ? show
+                  : none
               }
             >
               Previous
