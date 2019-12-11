@@ -3,10 +3,11 @@ import Login from "./Login";
 import Signup from "./Signup";
 
 function Usertab() {
+  let navigation = "nav nav-tabs nav-fill nav-justified";
   return (
     <div className="col-12 col-md-6 col-lg-5">
       <ul
-        className="nav nav-tabs nav-fill nav-justified"
+        className={sessionStorage.getItem("isAuthorized") ? "d-none" : navigation}
         id="myTab"
         role="tablist"
       >
@@ -38,7 +39,7 @@ function Usertab() {
         </li>
       </ul>
 
-      <div className="tab-content">
+      <div className={sessionStorage.getItem("isAuthorized") ? "d-none" : "tab-content"}>
         <div
           className="tab-pane active"
           id="signup"

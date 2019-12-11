@@ -4,7 +4,7 @@ function Footer () {
   return (
     <footer className="py-3 footer">
       <div className="container">
-        <p>&trade;</p>
+        <p className="mb-0">Simply Conceptual 2019&copy;</p>
       </div>
     </footer>
   );
