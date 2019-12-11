@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { FormBtn } from "../../../Form";
 import { CardHeader, CardBody } from "../Card";
+import Explanation from "../Explanation"
 
 class Function extends Component {
   state = {
@@ -42,6 +43,7 @@ class Function extends Component {
           <div className="col-12">
             <h2>ES6 Function</h2>
           </div>
+            <Explanation/>
         </div>
         <div className="row">
           <div className="col-6 col-lg-6 col-md-12 col-sm-12 d-inline-flex">
