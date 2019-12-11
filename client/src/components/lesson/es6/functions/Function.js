@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { FormBtn } from "../../../Form";
-import { CardHeader, CardBody } from "./Card";
+import { CardHeader, CardBody } from "../Card";
 
 class Function extends Component {
   state = {
