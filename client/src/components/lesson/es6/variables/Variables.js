@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { FormBtn } from "../../../Form";
-import { CardHeader, CardBody } from "./Card";
+import { CardHeader, CardBody } from "../Card";
+import Explanation from "../Explanation"
+
 
 class Variables extends Component {
   state = {
@@ -21,6 +23,8 @@ class Variables extends Component {
   };
 
   render() {
+    const show = {display: "block"};
+    const none = {display: "none"};
     return (
       <div className="container">
         <nav aria-label="breadcrumb">
@@ -40,6 +44,7 @@ class Variables extends Component {
           <div className="col-12">
             <h2>ES6 Variables</h2>
           </div>
+            <Explanation/>
         </div>
         <div className="row">
           <div className="col-6 col-lg-6 col-md-6 col-sm-12 d-inline-flex">
@@ -47,8 +52,8 @@ class Variables extends Component {
               <CardHeader
                 style={
                   this.state.clicked < 3
-                    ? { display: "block" }
-                    : { display: "none" }
+                    ? show
+                    : none
                 }
               >
                 ES5
@@ -57,8 +62,8 @@ class Variables extends Component {
                 <p
                   style={
                     this.state.clicked === 0
-                      ? { display: "block", paddingTop: "1rem" }
-                      : { display: "none" }
+                      ? { show, paddingTop: "1rem" }
+                      : none
                   }
                 >
                   In ES5, var is a generic declaration to define variables. It
@@ -69,8 +74,8 @@ class Variables extends Component {
                   src={require("../images/testVar.png")}
                   style={
                     this.state.clicked === 1
-                      ? { display: "block" }
-                      : { display: "none" }
+                      ? show
+                      : none
                   }
                   alt="example of var scope"
                 />
@@ -78,16 +83,16 @@ class Variables extends Component {
                   src={require("../images/testVarConsole.png")}
                   style={
                     this.state.clicked === 1
-                      ? { display: "block" }
-                      : { display: "none" }
+                      ? show
+                      : none
                   }
                   alt="example of var scope"
                 />
                 <p
                   style={
                     this.state.clicked === 1
-                      ? { display: "block", paddingTop: "1rem" }
-                      : { display: "none" }
+                      ? { show, paddingTop: "1rem" }
+                      : none
                   }
                 >
                   In this example, the console will log 55 and 55. Although a is
@@ -98,8 +103,8 @@ class Variables extends Component {
                   src={require("../images/testVarArray.png")}
                   style={
                     this.state.clicked === 2
-                      ? { display: "block" }
-                      : { display: "none" }
+                      ? show
+                      : none
                   }
                   alt="example of var array"
                 />
@@ -107,16 +112,16 @@ class Variables extends Component {
                   src={require("../images/testVarArrayConsole.png")}
                   style={
                     this.state.clicked === 2
-                      ? { display: "block" }
-                      : { display: "none" }
+                      ? show
+                      : none
                   }
                   alt="example of var array"
                 />
                 <p
                   style={
                     this.state.clicked === 2
-                      ? { display: "block", paddingTop: "1rem" }
-                      : { display: "none" }
+                      ? { show, paddingTop: "1rem" }
+                      : none
                   }
                 >
                   In this example, the console will display an array with
@@ -126,8 +131,8 @@ class Variables extends Component {
                 <p
                   style={
                     this.state.clicked === 3
-                      ? { display: "block", paddingTop: "1rem" }
-                      : { display: "none" }
+                      ? { show, paddingTop: "1rem" }
+                      : none
                   }
                 >
                   Thank you for using Simply Conceptual! Click on previous if
@@ -143,8 +148,8 @@ class Variables extends Component {
               <CardHeader
                 style={
                   this.state.clicked < 3
-                    ? { display: "block" }
-                    : { display: "none" }
+                    ? show
+                    : none
                 }
               >
                 ES6
@@ -154,8 +159,8 @@ class Variables extends Component {
                 <p
                   style={
                     this.state.clicked === 0
-                      ? { display: "block", paddingTop: "1rem" }
-                      : { display: "none" }
+                      ? { show, paddingTop: "1rem" }
+                      : none
                   }
                 >
                   In ES6, let and const replaces var. The let and const
@@ -167,8 +172,8 @@ class Variables extends Component {
                   src={require("../images/testLet.png")}
                   style={
                     this.state.clicked === 1
-                      ? { display: "block" }
-                      : { display: "none" }
+                      ? show
+                      : none
                   }
                   alt="example of let scope"
                 />
@@ -176,16 +181,16 @@ class Variables extends Component {
                   src={require("../images/testLetConsole.png")}
                   style={
                     this.state.clicked === 1
-                      ? { display: "block" }
-                      : { display: "none" }
+                      ? show
+                      : none
                   }
                   alt="example of let scope"
                 />
                 <p
                   style={
                     this.state.clicked === 1
-                      ? { display: "block", paddingTop: "1rem" }
-                      : { display: "none" }
+                      ? { show, paddingTop: "1rem" }
+                      : none
                   }
                 >
                   In this example. the console will log 55 and 35. The variable
@@ -198,8 +203,8 @@ class Variables extends Component {
                   src={require("../images/testConstArray.png")}
                   style={
                     this.state.clicked === 2
-                      ? { display: "block" }
-                      : { display: "none" }
+                      ? show
+                      : none
                   }
                   alt="example of const array"
                 />
@@ -207,8 +212,8 @@ class Variables extends Component {
                   src={require("../images/testConstArrayConsole1.png")}
                   style={
                     this.state.clicked === 2
-                      ? { display: "block" }
-                      : { display: "none" }
+                      ? show
+                      : none
                   }
                   alt="example of const array"
                 />
@@ -216,16 +221,16 @@ class Variables extends Component {
                   src={require("../images/testConstArrayConsole2.png")}
                   style={
                     this.state.clicked === 2
-                      ? { display: "block" }
-                      : { display: "none" }
+                      ? show
+                      : none
                   }
                   alt="example of const array"
                 />
                 <p
                   style={
                     this.state.clicked === 2
-                      ? { display: "block", paddingTop: "1rem" }
-                      : { display: "none" }
+                      ? { show, paddingTop: "1rem" }
+                      : none
                   }
                 >
                   In this example, the first console.log will display the first
@@ -238,8 +243,8 @@ class Variables extends Component {
                 <p
                   style={
                     this.state.clicked === 3
-                      ? { display: "block", paddingTop: "1rem" }
-                      : { display: "none" }
+                      ? { show, paddingTop: "1rem" }
+                      : none
                   }
                 >
                   {" "}
@@ -256,8 +261,8 @@ class Variables extends Component {
               onClick={this.handleUnclick}
               style={
                 this.state.clicked > 0
-                  ? { display: "block" }
-                  : { display: "none" }
+                  ? show
+                  : none
               }
             >
               Previous
