@@ -28,7 +28,7 @@ function Explanation() {
               things: content, padding, borders, and margins.
             </p>
           </div>
-          <div className="col-12 col-sm-6 col-md-3 d-inline-flex justify-content-stretch">
+          <div className="col-12 col-sm-6 col-lg-3 d-inline-flex justify-content-stretch">
             <div className="alert alert-dark bg-white">
               <p>
                 <strong>Content</strong> is the text image or whatever else in
@@ -40,7 +40,7 @@ function Explanation() {
               </p>
             </div>
           </div>
-          <div className="col-12 col-sm-6 col-md-3 d-inline-flex justify-content-stretch">
+          <div className="col-12 col-sm-6 col-lg-3 d-inline-flex justify-content-stretch">
             <div className="alert alert-dark bg-white">
               <p>
                 <strong>Padding</strong> is the space between the borders of an
@@ -49,7 +49,7 @@ function Explanation() {
               <p>The size of the padding can be set using css.</p>
             </div>
           </div>
-          <div className="col-12 col-sm-6 col-md-3 d-inline-flex justify-content-stretch">
+          <div className="col-12 col-sm-6 col-lg-3 d-inline-flex justify-content-stretch">
             <div className="alert alert-dark bg-white">
               <p>
                 <strong>Borders</strong> are the edges of an element.
@@ -60,7 +60,7 @@ function Explanation() {
               </p>
             </div>
           </div>
-          <div className="col-12 col-sm-6 col-md-3 d-inline-flex justify-content-stretch">
+          <div className="col-12 col-sm-6 col-lg-3 d-inline-flex justify-content-stretch">
             <div className="alert alert-dark bg-white">
               <p>
                 <strong>Margins</strong> are the space between the outside of

@@ -4,6 +4,7 @@ import Explanation from "./Explanation";
 import Box from "./Box";
 import BoxLegend from "./Legend";
 import BoxButtons from "./Buttons";
+import Author from "../../authors/author";
 
 class BoxModel extends React.Component {
   constructor(props) {
@@ -103,6 +104,7 @@ class BoxModel extends React.Component {
               </button>
             </div>
           </div>
+          <Author author="Jasmine" />
           <div className="row mt-5">
             <div className="col-12 col-sm-6"></div>
             <div className="col-12 col-sm-6">
