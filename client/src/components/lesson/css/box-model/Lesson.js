@@ -104,7 +104,9 @@ class BoxModel extends React.Component {
               </button>
             </div>
           </div>
-          <Author author="Jasmine" />
+        </div>
+        <Author bg="bg-gray" author="Jasmine" />
+        <div className="container">
           <div className="row mt-5">
             <div className="col-12 col-sm-6"></div>
             <div className="col-12 col-sm-6">
