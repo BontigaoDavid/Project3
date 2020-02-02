@@ -79,7 +79,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="row py-4 bg-gray">
+      <div className="py-4 bg-gray">
         <div className="container">
           <h3><i className="fas fa-users"></i> The Team</h3>
           <div className="row">
