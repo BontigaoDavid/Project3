@@ -106,7 +106,8 @@ Contributions are what make the open source community such an amazing place to b
 
 ### David Bontiago
 
-### John Doe
+### John Do
+[Github Portfolio](https://github.com/johnphtdo) | [Portfolio](https://johnphtdo.herokuapp.com) | [LinkedIn](https://linkedin.com/in/johnphtdo/) | [Email Me](johnphtdo@gmail.com)
 
 ### Jasmine Tsai
 [Github Portfolio](https://jtsai972.github.io/Github-Portfolio/) | [Website - Jtsai972.space](jtsai972.space) | [Email Me](jtsai972@gmail.com)
