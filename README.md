@@ -18,7 +18,7 @@
     <br />
     <a href="https://github.com/BontigaoDavid/Project3"><strong>Explore the docs »</strong></a>
     <br />
-    <a href="https://vast-cliffs-60334.herokuapp.com/">Heroku Demo »</a>
+    <a href="https://simplyconceptual.herokuapp.com/">Heroku Demo »</a>
     <br />
     <br />
     <a href="https://github.com/BontigaoDavid/Project3/issues">Report Bug</a>
@@ -82,7 +82,7 @@ npm install
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-In the [Demo on Heroku](https://vast-cliffs-60334.herokuapp.com/), you should be able to navigate around to take a look at the functionality. 
+In the [Demo on Heroku](https://simplyconceptual.herokuapp.com/), you should be able to navigate around to take a look at the functionality. 
 
 There is no functionality at this moment, we've just started, but we have plans for a profile page, some content pages, and a home page at least.
 
